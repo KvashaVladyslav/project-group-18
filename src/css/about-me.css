@@ -1,0 +1,293 @@
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 375px;
+    padding: 0px 16px;
+    margin: 0 auto;
+  }
+
+  section {
+    padding: 32px 0px;
+  }
+
+  .section-footer {
+    padding-top: 32px;
+  }
+
+  .about-me {
+    background-color: #1c1d20;
+    margin: 64px, 16px;
+  }
+
+  .intro {
+    max-width: 343px;
+    margin: 0px, 16px, 16px, 16px;
+    border-radius: 24px;
+    background-color: #242527;
+  }
+
+  .img {
+    margin: 0px, 16px, 32px, 16px;
+  }
+
+  .about-me-img {
+    background-image: url(../img/about-me/about-me-mobile.png),
+      url(../img/about-me/about-me-mobile@2x.png);
+  }
+
+  .about-me-intro {
+    text-transform: uppercase;
+    margin: 32px, 32px, 272px, 32px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -3%;
+    align-self: left;
+    color: #fafafa;
+  }
+
+  .functional {
+    color: #ed3b44;
+  }
+
+  .websites {
+    color: #fafafa66;
+  }
+
+  .about-me-list {
+    list-style-type: none;
+    max-width: 343px;
+    margin: 0px, 16px, 32px, 16px;
+    padding: 0px;
+  }
+
+  .about-me-title {
+    max-width: 284px;
+    margin: 0px, 23px, 24px, 0px;
+    padding: 0px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -2%;
+    align-self: left;
+    color: #fafafa66;
+  }
+
+  .about-me-text {
+    max-width: 343px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -2%;
+    align-self: left;
+    color: #fafafa;
+  }
+
+  .about-me-item {
+    gap: 32px;
+    padding: 0px, 0px, 20px, 0px;
+  }
+
+  .role-list {
+    list-style-type: none;
+    max-width: 343px;
+    margin: 0px, 16px, 32px, 16px;
+    padding: 0px;
+    gap: 10px;
+  }
+
+  .role-list-item {
+    max-width: 284px;
+    line-height: 24px;
+    padding: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -2%;
+    align-self: left;
+    color: #fafafa;
+  }
+
+  .education-list {
+    list-style-type: none;
+    max-width: 343px;
+    padding: 0px;
+  }
+
+  .education-list-item {
+    max-width: 284px;
+    line-height: 24px;
+    padding: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -2%;
+    align-self: left;
+    color: #fafafa;
+  }
+
+  .skills-list {
+    list-style-type: none;
+    max-width: 343px;
+    padding: 0px;
+    margin: 0px, 16px, 64px, 16px;
+    gap: 0px;
+  }
+
+  .skills-list-item {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    border-color: #fafafa;
+  }
+
+  .skills-list-item :active {
+    background-color: #ed3b44;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0px 32px;
+  }
+
+  section {
+    padding: 48px 0px;
+  }
+
+  .section-footer {
+    padding-top: 48px;
+  }
+
+  .about-me {
+    margin: 64px, 32px, 96px, 32px;
+  }
+
+  .intro {
+    max-width: 704px;
+    margin: 0px, 32px, 16px, 32px;
+  }
+
+  .img {
+    margin: 16px, 32px, 64px, 32px;
+  }
+
+  .about-me-img {
+    background-image: url(../img/about-me/about-me-tablet.png),
+      url(../img/about-me/about-me-tablet@2x.png);
+  }
+
+  .about-me-intro {
+    margin: 64px, 64px, 436px, 64px;
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  .about-me-list {
+    max-width: 704px;
+    margin: 0px, 32px, 64px, 32px;
+  }
+
+  .about-me-title {
+    max-width: 284px;
+    margin: 0px, 23px, 24px, 0px;
+  }
+
+  .about-me-text {
+    max-width: 704px;
+  }
+
+  .about-me-item {
+    gap: 16px;
+    padding: 0px, 32px, 32px, 32px;
+  }
+
+  .role-list {
+    max-width: 704px;
+  }
+
+  .education-list {
+    max-width: 704px;
+  }
+
+  .skills-list {
+    max-width: 704px;
+    margin: 0px, 32px, 96px, 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  section {
+    padding: 82px 0px;
+  }
+
+  .section-footer {
+    padding-top: 82px;
+  }
+
+  .about-me {
+    margin: 96px, 32px, 164px, 32px;
+  }
+
+  .intro {
+    max-width: 680px;
+    margin-right: 16px;
+  }
+
+  .img {
+    margin: 0px;
+  }
+
+  .about-me-img {
+    background-image: url(../img/about-me/about-me-desktop.png),
+      url(../img/about-me/about-me-desktop@2x.png);
+  }
+
+  .about-me-intro {
+    margin: 64px, 64px, 436px, 64px;
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  .about-me-list {
+    max-width: 1376px;
+    margin: 96px, 32px;
+  }
+
+  .about-me-title {
+    margin: 0px, 23px, 16px, 0px;
+  }
+
+  .about-me-text {
+    max-width: 612px;
+  }
+
+  .about-me-item {
+    gap: 32px;
+    padding: 48px, 68px, 32px, 0px;
+  }
+
+  .role-list {
+    max-width: 1376px;
+  }
+
+  .education-list {
+    max-width: 1376px;
+  }
+
+  .skills-list {
+    max-width: 1312px;
+    margin: 0px, 64px, 164px, 64px;
+  }
+
+  .skills-list-item {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    border-color: #fafafa;
+  }
+}
