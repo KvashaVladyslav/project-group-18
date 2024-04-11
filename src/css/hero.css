@@ -16,9 +16,15 @@
 .hero-address {
   border: 1ps solid #e8dada;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .hero-post-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .hero-post {
