@@ -20,12 +20,15 @@ body {
     overflow: hidden;
 }
 
+.container {
+    margin: 0 auto;
+}
+
 
 @media screen and (max-width:767px) {
     .container {
         max-width: 375px;
         padding: 0px 16px;
-        margin: 0 auto;
     }
 
     section {
