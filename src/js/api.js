@@ -10,13 +10,13 @@ export async function apiGet(){
     
 }
 
-export async function apiPost(email, phone) {
+export async function apiPost(email, comment) {
     const base = "https://portfolio-js.b.goit.study";
     const end = "/api/requests";
     const url = `${base}${end}`;
 
     try {
-        const response = await axios.post(url, { email, phone });
+        const response = await axios.post(url, { email, comment });
         return response.data;
     } catch (error) {
         console.error("Error submitting request:", error);
