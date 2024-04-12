@@ -1,0 +1,117 @@
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 16, 0.6);
+    z-index: 999;
+}
+
+.backdrop.hidden {
+    display: none;
+}
+
+.modal-relative {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+}
+
+.modal-window {
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 344px;
+    top: -400px;
+    height: 276px;
+    background-color: rgb(28, 29, 32);
+    border-radius: 20px;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    color: white;
+}
+
+.modal-window.hidden{
+    display: none;
+    opacity: 0;
+}
+
+.relative{
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: -50px;
+    right: -140px;
+    background-color: transparent;
+    border: 0;
+}
+
+.svg-close {
+    stroke: white;
+    fill: white;
+    width: 22px;
+        height: 22px;
+}
+
+.modal-text {
+    padding-top: ;
+    width: 280px;
+    height: 148px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: rgb(250, 250, 250);
+    margin: 0;
+}
+
+.modal-paragraf {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.6);
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-window {
+        width: 492px;
+        height: 246px;
+        top: -500px;
+        right: 150px;
+            height: 276px;
+    }
+    .close-btn{
+        top: -30px;
+            right: -220px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .modal-window {
+        width: 600px;
+        height: 300px;
+        top: -500px;
+            left: 500px;
+    }
+
+    .close-btn{
+        top: -50px;
+    right: -250px;
+    }
+}
