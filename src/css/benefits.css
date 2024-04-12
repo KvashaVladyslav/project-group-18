@@ -8,12 +8,10 @@
     width: 284px;
     height: 24px;
     color: rgba(250, 250, 250, 0.40);
-    font-family: "Inter Tight";
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.32px;
+    letter-spacing: -0.02em;
     text-transform: uppercase;
     margin-bottom: 32px;
 }
@@ -38,7 +36,8 @@
     border-radius: 10px;
     background: #ED3B44;
     padding: 12px;
-    fill: #FAFAFA;
+    fill: #ED3B44;
+    stroke: #FAFAFA;
 }
 
 .card-title {
@@ -47,28 +46,26 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 30px;
-    letter-spacing: -0.4px;
+    line-height: 1.87;
+    letter-spacing: -0.025em;
     align-self: stretch;
     margin-top: 64px;
 }
 
 .card-text {
     color: rgba(250, 250, 250, 0.60);
-    font-family: "Inter Tight";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.32px;
+    letter-spacing: -0.02em;
     align-self: stretch;
     margin-top: 8px;
 }
 
 
 .order-the-project-btn {
-    width: 188px;
-    height: 55px;
+    width: 189px;
+    height: 56px;
     display: flex;
     padding: 18px 36px;
     justify-content: center;
@@ -79,12 +76,11 @@
     margin-top: 32px;
     color: #FAFAFA;
     background: #1C1D20;
-    font-family: "Inter Tight";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: -0.32px;
+    letter-spacing: -0.02em;
 }
 
 /* ==========================tablet-768======================== */
