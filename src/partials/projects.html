@@ -1,10 +1,11 @@
 <section class="project">
-  <div class="container swiper">
+  <div class="project-container">
     <h2 class="project-title">PROJECTS</h2>
+    <div class="swiper">
     <ul class="project-list swiper-wrapper">
 
       <li class="first-project-item half-background swiper-slide">
-        <div class="project-container">
+        <div class="project-item">
           <div class="main">
             <ul class="list-name">
               <li class="item-react">#react</li>
@@ -17,13 +18,14 @@
                 project</button></a>
           </div>
           <div class="project-thumb">
-            <img class="project-img" src="../img/projects/project-1.png" alt="" />
+            <img class="project-img" srcset="../img/projects/project-1@2x.png 2x"
+    src="../img/projects/project-1.png" alt="screen"/>
           </div>
         </div>
       </li>
 
       <li class="first-project-item half-background swiper-slide">
-        <div class="project-container">
+        <div class="project-item">
           <div class="main">
             <ul class="list-name">
               <li class="item-react">#react</li>
@@ -42,7 +44,7 @@
       </li>
 
       <li class="first-project-item half-background swiper-slide">
-        <div class="project-container">
+        <div class="project-item">
           <div class="main">
             <ul class="list-name">
               <li class="item-react">#react</li>
@@ -62,5 +64,7 @@
     </ul>
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
+    </div>
   </div>
 </section>
+<script type="module" src="../js/projects.js"></script>
