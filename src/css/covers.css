@@ -10,21 +10,6 @@ section {
 
 .container {
   position: relative;
-  background-image: url(../img/covers/background.png);
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-  .covers-item {
-    width: 544px;
-    height: 314px;
-  }
-
-  section {
-    padding: 82px 0px;
-  }
 }
 
 .covers {
@@ -32,27 +17,31 @@ section {
   right: -800px;
   left: 0;
   overflow: hidden;
+  background-image: url(../img/covers/background.png);
+  background-size: cover;
 }
 
 .covers-list {
-  height: 100hv;
   display: flex;
   transform: rotate(17deg);
 }
 
 .covers-item {
-  flex-shrink: 0;
-  margin-right: 10px;
-  display: flex;
+  /* margin: 5px; */
+display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(100% / 8);
-  white-space: nowrap;
+  width: calc(100% / 10);
   animation-name: coversItem;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
+
+/* .covers-img {
+  width: 544px;
+  height: 314px;
+} */
 
 @keyframes coversItem {
   from {
@@ -61,5 +50,41 @@ section {
 
   to {
     transform: translateX(-180%);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+
+  section {
+    padding: 82px 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 375px;
+    padding: 0px 16px;
+  }
+
+  section {
+    padding: 32px 0px;
+  }
+  .covers-item {
+    width: 282.29px;
+    height: 162.94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0px 32px;
+  }
+
+  section {
+    padding: 48px 0px;
   }
 }
