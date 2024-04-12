@@ -1,5 +1,8 @@
 body {
-    font-family: Inter Tight sans-serif;
+    font-family: 'Inter Tight', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
     color: #FFFFFF;
     background: #1C1D20;
 }
@@ -17,12 +20,15 @@ body {
     overflow: hidden;
 }
 
+.container {
+    margin: 0 auto;
+}
+
 
 @media screen and (max-width:767px) {
     .container {
         max-width: 375px;
         padding: 0px 16px;
-        margin: 0 auto;
     }
 
     section {
