@@ -49,6 +49,10 @@
   opacity: 0.2;
 }
 
+.icon-svg-slider-down {
+  fill: #ffffff;
+}
+
 .about-me-intro {
   text-transform: uppercase;
   font-weight: 500;
@@ -134,7 +138,7 @@
 
 .skills-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   overflow: hidden;
 }
 
@@ -154,8 +158,26 @@
   line-height: 24px;
 }
 
-.skills-list-item :active {
+.skills-list-item:hover {
   background-color: #ed3b44;
+}
+
+.skills-section {
+  display: flex;
+  align-items: center;
+}
+
+.skills-btn-arrow-right {
+  background-color: transparent;
+  border: none;
+  width: 28px;
+  height: 28px;
+}
+
+.icon-svg-arrow-right {
+  fill: #ffffff;
+  width: 28px;
+  height: 28px;
 }
 
 @media screen and (min-width: 768px) {
