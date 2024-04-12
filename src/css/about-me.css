@@ -1,175 +1,175 @@
-@media screen and (max-width: 767px) {
-  .container {
-    max-width: 375px;
-    padding: 0px 16px;
-    margin: 0 auto;
-  }
+.functional {
+  color: #ed3b44;
+}
 
-  section {
-    padding: 32px 0px;
-  }
+.websites {
+  color: #fafafa60;
+}
 
-  .section-footer {
-    padding-top: 32px;
-  }
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
 
-  .about-me {
-    background-color: #1c1d20;
-    margin: 64px, 16px;
-  }
+.intro {
+  border-radius: 24px;
+  background-color: #242527;
+}
 
-  .intro {
-    max-width: 343px;
-    margin: 0px, 16px, 16px, 16px;
-    border-radius: 24px;
-    background-color: #242527;
-  }
+.img {
+  border-radius: 24px;
+  width: 100%;
+}
 
-  .img {
-    margin: 0px, 16px, 32px, 16px;
-  }
+.about-me-title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
 
-  .about-me-img {
-    background-image: url(../img/about-me/about-me-mobile.png),
-      url(../img/about-me/about-me-mobile@2x.png);
-  }
+.about-me-paragraph-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 
-  .about-me-intro {
-    text-transform: uppercase;
-    margin: 32px, 32px, 272px, 32px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -3%;
-    align-self: left;
-    color: #fafafa;
-  }
+.about-me-button-slider-down {
+  background-color: transparent;
+  border: none;
+  width: 32px;
+  height: 32px;
+}
 
-  .functional {
-    color: #ed3b44;
-  }
+.about-me-button-slider-down {
+  border: 1px solid #fafafa;
+  border-radius: 50%;
+  opacity: 0.2;
+}
 
-  .websites {
-    color: #fafafa66;
-  }
+.about-me-intro {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  color: #fafafa;
+  padding: 32px 32px 272px 32px;
+}
 
-  .about-me-list {
-    list-style-type: none;
-    max-width: 343px;
-    margin: 0px, 16px, 32px, 16px;
-    padding: 0px;
-  }
+.about-me-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+  max-width: 343px;
+  padding: 0px;
+  margin-bottom: 32px;
+}
 
-  .about-me-title {
-    max-width: 284px;
-    margin: 0px, 23px, 24px, 0px;
-    padding: 0px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -2%;
-    align-self: left;
-    color: #fafafa66;
-  }
+.about-me-title {
+  max-width: 284px;
+  margin: 0px, 23px, 24px, 0px;
+  padding: 0px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  align-self: left;
+  color: #fafafa66;
+}
 
-  .about-me-text {
-    max-width: 343px;
-    margin: 0px;
-    padding: 0px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -2%;
-    align-self: left;
-    color: #fafafa;
-  }
+.about-me-text {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
 
-  .about-me-item {
-    gap: 32px;
-    padding: 0px, 0px, 20px, 0px;
-  }
+.about-me-item {
+  border-bottom: 1px solid #fafafa20;
+  padding-bottom: 20px;
+}
 
-  .role-list {
-    list-style-type: none;
-    max-width: 343px;
-    margin: 0px, 16px, 32px, 16px;
-    padding: 0px;
-    gap: 10px;
-  }
+.role-list {
+  list-style-type: none;
+  max-width: 343px;
+  margin: 0px, 16px, 32px, 16px;
+  padding: 0px;
+  gap: 10px;
+}
 
-  .role-list-item {
-    max-width: 284px;
-    line-height: 24px;
-    padding: 0px;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: -2%;
-    align-self: left;
-    color: #fafafa;
-  }
+.role-list-item {
+  max-width: 284px;
+  line-height: 24px;
+  padding: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  align-self: left;
+  color: #fafafa;
+}
 
-  .education-list {
-    list-style-type: none;
-    max-width: 343px;
-    padding: 0px;
-  }
+.education-list {
+  list-style-type: none;
+  max-width: 343px;
+  padding: 0px;
+}
 
-  .education-list-item {
-    max-width: 284px;
-    line-height: 24px;
-    padding: 0px;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: -2%;
-    align-self: left;
-    color: #fafafa;
-  }
+.education-list-item {
+  max-width: 284px;
+  line-height: 24px;
+  padding: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  align-self: left;
+  color: #fafafa;
+}
 
-  .skills-list {
-    list-style-type: none;
-    max-width: 343px;
-    padding: 0px;
-    margin: 0px, 16px, 64px, 16px;
-    gap: 0px;
-  }
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
 
-  .skills-list-item {
-    width: 200px;
-    height: 200px;
-    border-radius: 50px;
-    border-color: #fafafa;
-  }
+.skills-list-item {
+  border: 1px solid #fafafa20;
+  padding: 26px 26px;
+  border-radius: 50%;
+  width: 76px;
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  line-height: 24px;
+}
 
-  .skills-list-item :active {
-    background-color: #ed3b44;
-  }
+.skills-list-item :active {
+  background-color: #ed3b44;
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0px 32px;
-  }
-
-  section {
-    padding: 48px 0px;
-  }
-
-  .section-footer {
-    padding-top: 48px;
-  }
-
-  .about-me {
-    margin: 64px, 32px, 96px, 32px;
+  .intro-wrapper {
+    margin-bottom: 64px;
   }
 
   .intro {
-    max-width: 704px;
-    margin: 0px, 32px, 16px, 32px;
+    background: #242527;
+    border-radius: 24px;
   }
 
   .img {
-    margin: 16px, 32px, 64px, 32px;
+    width: 100%;
   }
 
   .about-me-img {
@@ -178,14 +178,16 @@
   }
 
   .about-me-intro {
-    margin: 64px, 64px, 436px, 64px;
+    padding: 64px 64px 436px 64px;
     font-size: 38px;
     line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
   }
 
   .about-me-list {
-    max-width: 704px;
-    margin: 0px, 32px, 64px, 32px;
+    max-width: 768px;
+    margin-bottom: 64px;
   }
 
   .about-me-title {
@@ -194,48 +196,37 @@
   }
 
   .about-me-text {
-    max-width: 704px;
-  }
-
-  .about-me-item {
-    gap: 16px;
-    padding: 0px, 32px, 32px, 32px;
+    max-width: 768px;
   }
 
   .role-list {
-    max-width: 704px;
+    max-width: 768px;
   }
 
   .education-list {
-    max-width: 704px;
+    max-width: 768px;
   }
 
-  .skills-list {
-    max-width: 704px;
-    margin: 0px, 32px, 96px, 32px;
+  .skills-list-item {
+    width: 146px;
+    height: 146px;
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
+  .intro-wrapper {
+    flex-direction: row;
+    max-width: 1376px;
+    margin: 0px auto 64px;
   }
 
-  section {
-    padding: 82px 0px;
-  }
-
-  .section-footer {
-    padding-top: 82px;
-  }
-
-  .about-me {
-    margin: 96px, 32px, 164px, 32px;
+  .about-me-paragraph-container {
+    align-items: flex-end;
   }
 
   .intro {
     max-width: 680px;
-    margin-right: 16px;
   }
 
   .img {
@@ -255,7 +246,11 @@
 
   .about-me-list {
     max-width: 1376px;
-    margin: 96px, 32px;
+    margin: 0 auto;
+  }
+
+  .about-me-title-container {
+    margin-bottom: 32px;
   }
 
   .about-me-title {
@@ -264,11 +259,11 @@
 
   .about-me-text {
     max-width: 612px;
+    padding-right: 68px;
   }
 
   .about-me-item {
-    gap: 32px;
-    padding: 48px, 68px, 32px, 0px;
+    padding-bottom: 32px;
   }
 
   .role-list {
@@ -280,14 +275,7 @@
   }
 
   .skills-list {
-    max-width: 1312px;
-    margin: 0px, 64px, 164px, 64px;
-  }
-
-  .skills-list-item {
-    width: 200px;
-    height: 200px;
-    border-radius: 50px;
-    border-color: #fafafa;
+    margin: 0 auto;
+    max-width: 1376px;
   }
 }
