@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 812px;
+  padding-left: 16px;
   background: url(../img/hero/hero-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -57,6 +58,7 @@
 @media screen and (min-width: 768px) {
   .hero {
     height: 1024px;
+    padding-left: 32px;
     background: url(../img/hero/hero-tablet.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -100,6 +102,7 @@
 @media screen and (min-width: 1440px) {
   .hero {
     height: 900px;
+    padding-left: 32px;
     background: url(../img/hero/hero-desktop.png);
     background-repeat: no-repeat;
     background-position: center;
