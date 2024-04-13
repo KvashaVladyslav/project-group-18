@@ -1,0 +1,230 @@
+header{
+    position: relative;
+}
+
+.open-mobile-order-btn{
+    display: none;
+    opacity: 0;
+}
+
+.header-nav-menu-link {
+    display: none;
+    opacity: 0;
+    margin-bottom: 20px;
+}
+
+.flex-logo{
+    display: flex;
+}
+
+.menu-nav{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.menu-nav:hover .menu-list {
+    opacity: 1;
+    visibility: visible;
+}
+.menu-nav.link {
+    color: rgb(250, 250, 250);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -2%;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+.header-img{
+    margin-right: 10px;
+    width: 80px;
+    height: 80px
+    
+}
+
+.jefferson{
+    color: rgb(250, 250, 250);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -2%;
+}
+
+
+.open-mobile-menu-btn{
+    background-color: transparent;
+    border: 0px solid transparent;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.svg-burger {
+    stroke: rgb(250, 250, 250);
+    fill: rgb(250, 250, 250);
+    width: 100%;
+        height: 100%;
+}
+
+
+
+
+
+
+ .modal-phone-window {
+     position: fixed;
+     top: 0;
+     left: 0;
+    min-width: 100%;
+     height: 812px;
+     background-color: black;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     z-index: 9999;
+    transition: transform 0.5s ease;
+    transform: translateX(0);
+ }
+
+ .modal-phone-window.hidden{
+    transform: translateX(100%);
+  }
+  
+.btn-close{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+        top: 32px;
+        right: 16px;
+        fill: white;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0px solid transparent;
+}
+.svg-close{
+    stroke: rgb(250, 250, 250);
+        fill: rgb(250, 250, 250);
+}
+
+ 
+
+ .modal-phone-window .links {
+     text-align: center;
+     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 290px;
+ }
+
+ .open-mobile-order-btn-modal{
+    opacity: 1;
+        border: 0px solid transparent;
+        width: 163px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 60px;
+        background: rgb(237, 59, 68);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: -2%;
+        color: rgb(250, 250, 250);
+ }
+
+ 
+
+ .modal-phone-window .link {
+    color: rgb(250, 250, 250);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: -2%;    
+        text-decoration-line: underline;
+ }
+
+
+@media screen and (min-width:768px){
+    .container {
+            max-width: 768px;
+            padding: 0px 32px;
+        }
+    
+        .open-mobile-menu-btn{
+            display: none;
+            opacity: 0;
+        }
+                .open-mobile-order-btn {
+                  
+                    opacity: 1;
+                    /* btn */
+                    border: 0px solid transparent;
+                        width: 163px;
+                        height: 55px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 60px;
+                            background: rgb(237, 59, 68);
+                            font-size: 16px;
+                            
+                                font-weight: 500;
+                            
+                                line-height: 19px;
+                            
+                                letter-spacing: -2%;
+                                color: rgb(250, 250, 250);
+                }
+                                .header-nav-menu-link {
+                                    display: block;
+                                    opacity: 1;
+                        
+                                        color: rgb(250, 250, 250);
+                                       
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        line-height: 19px;
+                                        letter-spacing: -2%;
+                                    
+                                        text-decoration-line: underline;
+                                }
+                                .modal-phone-window{
+                                    display: none;
+                                    opacity: 0;
+                                }
+}
+
+@media screen and (min-width:1440px) {
+.container {
+        max-width: 1440px;
+    }
+         .modal-phone-windo {
+             display: none;
+             opacity: 0;
+         }
+
+}
