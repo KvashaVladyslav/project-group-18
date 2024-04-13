@@ -49,6 +49,7 @@
     line-height: 150%;
     letter-spacing: -0.02em;
     color: #fafafa;
+    width: 100%;
 }
 
 .input-field:hover,
