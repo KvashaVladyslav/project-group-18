@@ -48,12 +48,49 @@
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.02em;
-    color: #fafafa60;
+    color: #fafafa;
+}
+
+.input-field:hover,
+.input-field:focus {
+    border-bottom: 1px solid #fafafa;
 }
 
 .input-field::placeholder {
-   color: #fafafa90;
+   color: #fafafa60;
 }
+
+.input-field.success{
+    border-bottom: 1px solid rgb(60, 188, 129);
+}
+.input-field.error {
+    border-bottom: 1px solid rgb(231, 74, 59);
+}
+.success-text{
+    color: rgb(60, 188, 129);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: -2%;
+        text-align: left;
+}
+.error-text{
+    color: rgb(231, 74, 59);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: -2%;
+        text-align: left;
+}
+.error-text.hidden{
+    display: none;
+    opacity: 0;
+}
+.success-text.hidden {
+    display: flex;
+    opacity: 0;
+}
+
 
 .submit-button {
     padding: 40px 32px;
@@ -64,6 +101,11 @@
     border: 0px solid transparent;
     color: #fafafa;
     margin-bottom: 64px;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color: #E0373F;
 }
 
 .contact-info {
@@ -105,12 +147,14 @@
 }
 
 
-.email-info:hover {
-    border: none;
+.email-info:hover,
+.email-info:focus {
+    border: 1px solid #fafafa;
 }
 
-.phone-info:hover {
-    border: none;
+.phone-info:hover,
+.phone-info:focus {
+    border: 1px solid #fafafa;
 }
 
 
