@@ -42,6 +42,13 @@ h2 {
 }
 
 
+.review-list{
+    margin-bottom: 32px;
+}
+
+
+
+
 .project-arrow-svg {
     fill: none;
     stroke: #fafafa;
@@ -69,4 +76,15 @@ h2 {
 .project-arrow-svg {
     width: 24px;
     height: 24px;
+}
+
+.btn-item-left {
+    margin-right: 12px;
+}
+
+.swiper-btn-prev.swiper-button-disabled,
+.swiper-btn-next.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    pointer-events: none;
 }
