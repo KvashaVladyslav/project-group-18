@@ -57,7 +57,12 @@
 @media screen and (min-width: 768px) {
   .hero {
     height: 1024px;
+    background: url(../img/hero/hero-tablet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-size: cover;
   }
+
   .hero-title {
     font-size: 90px;
     font-weight: 400;
@@ -95,6 +100,10 @@
 @media screen and (min-width: 1440px) {
   .hero {
     height: 900px;
+    background: url(../img/hero/hero-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-size: cover;
   }
 
   .hero-title {
