@@ -31,7 +31,6 @@ p {
 } */
 
 .project-container {
-    min-width: 320px;
     max-width: 375px;
     padding-right: 16px;
     padding-left: 16px;
@@ -78,7 +77,7 @@ p {
 .project-title {
     font: 'Inter Tight';
     font-weight: 500;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 1.5;
 
     color: rgba(250, 250, 250, 0.4);
@@ -277,7 +276,8 @@ p {
 /* ---------------- btn-------------------------- */
 
 .project-arrow-svg {
-    fill: rgb(250, 250, 250);
+    fill: none;
+    stroke: #fafafa;
 }
 
  .btn-svg {

@@ -22,7 +22,7 @@
     border-radius: 20px;
     background: #242527;
     padding: 24px;
-    max-width: 296px;
+    max-width: 344px;
 }
 
 .card-item {
@@ -43,6 +43,8 @@
     padding: 12px;
     fill: #ED3B44;
     stroke: #FAFAFA;
+    width: 44px;
+    height: 44px;
 }
 
 .card-title {
@@ -139,9 +141,6 @@
         margin-right: 0;
     }
 
-    .benefits-list-card {
-
-    }
 
     .benefits-title {
         margin-bottom: 0;
