@@ -1,5 +1,15 @@
 import { apiGet } from "./api";
 
+// У файлі main.js
+// core version + navigation, pagination modules:
+import Swiper from 'swiper';
+import { Navigation, Pagination, Keyboard } from 'swiper/modules';
+// import Swiper and modules styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+
 const list_html_review = document.querySelector(".review-list");
 const list_of_reviews = await apiGet();
 for (let i = 0; i < list_of_reviews.length; i++) {
@@ -10,4 +20,20 @@ for (let i = 0; i < list_of_reviews.length; i++) {
                         </li>`;
     list_html_review.innerHTML += card_of_review;
 }
+
+const swiper = new Swiper('.swiper', {
+    modules: [Navigation, Pagination, Keyboard],
+
+    navigation: {
+        nextEl: '.swiper-btn-next',
+        prevEl: '.swiper-btn-prev',
+    },
+
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+    },
+
+});
 
