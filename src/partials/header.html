@@ -1,3 +1,47 @@
 <header>
-  <div class="container"></div>
+  <div class="container">
+  <nav class="header-nav">
+    <div class="flex-logo">
+      <img class="header-img" srcset="../img/header/header-photo.png, ../img/header/header-photo.png@2x" alt="Company's logo">
+      </img>
+      <p class="jefferson">jefferson*</p>
+    </div>
+   <div class="menu-nav">
+    <a class="header-nav-menu-link">Menu</a>
+    <ul class="menu-list visually-hidden">
+      <li><a class="link" href="./about-me.html">About me</a></li>
+      <li><a class="link" href="./benefits.html">Benefits</a></li>
+      <li><a class="link" href="./projects.html">Projects</a></li>
+      <li><a class="link" href="./faq.html">FAQ</a></li>
+    </ul>
+   </div>
+    
+    <button class="open-mobile-menu-btn" type="button">
+      <svg class="svg-burger">
+        <use href="../img/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <button class="open-mobile-order-btn">
+      <a href="./work-together.html">Order the project</a>
+    </button>
+  </nav>
+  </div>
+
+  <div class="modal-phone-window hidden">
+    <button class="btn-close" type="button">
+      <svg class="svg-close">
+        <use href="../img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="links">
+      <li><a class="link" href="./about-me.html">About me</a></li>
+      <li><a class="link" href="./benefits.html">Benefits</a></li>
+      <li><a class="link" href="./projects.html">Projects</a></li>
+      <li><a class="link" href="./faq.html">FAQ</a></li>
+    </ul>
+    <button class="open-mobile-order-btn-modal">
+      <a href="./work-together.html">Order the project</a>
+    </button>
+  </div>
 </header>
+
