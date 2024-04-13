@@ -209,6 +209,12 @@ p {
     /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
+.project-btn:hover,
+.project-btn:focus {
+    background: #E0373F;
+
+}
+
 @media screen and (min-width: 768px) {
     .project-btn {
         background-color: rgb(237, 59, 68);
@@ -293,6 +299,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.swiper-btn:hover,
+.swiper-btn:focus {
+    border: 1px solid #fafafa;
 }
 
 .swiper {
