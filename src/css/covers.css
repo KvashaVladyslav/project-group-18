@@ -24,14 +24,16 @@ section {
 .covers-list {
   display: flex;
   transform: rotate(17deg);
+  max-height: 314px;
 }
 
-.covers-item {
-  /* margin: 5px; */
-display: flex;
+.covers-item  {
+  margin-right: 10px;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   width: calc(100% / 10);
+  height: auto;
   animation-name: coversItem;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
