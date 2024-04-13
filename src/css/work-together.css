@@ -1,0 +1,246 @@
+.footer-content-wrapper {
+    max-width: 343px;
+}
+.footer-content {
+    display: flex;
+    gap: 8px;
+}
+
+.footer-img {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+}
+
+.footer-title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.0;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 63px;
+}
+
+.highlighted-text {
+    color: #ED3B44;
+
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.input-field {
+    outline: none;
+    padding-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fafafa20;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+}
+
+.input-field:hover,
+.input-field:focus {
+    border-bottom: 1px solid #fafafa;
+}
+
+.input-field::placeholder {
+   color: #fafafa60;
+}
+
+.input-field.success{
+    border-bottom: 1px solid rgb(60, 188, 129);
+}
+.input-field.error {
+    border-bottom: 1px solid rgb(231, 74, 59);
+}
+.success-text{
+    color: rgb(60, 188, 129);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: -2%;
+        text-align: left;
+}
+.error-text{
+    color: rgb(231, 74, 59);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: -2%;
+        text-align: left;
+}
+.error-text.hidden{
+    display: none;
+    opacity: 0;
+}
+.success-text.hidden {
+    display: flex;
+    opacity: 0;
+}
+
+
+.submit-button {
+    padding: 40px 32px;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #ED3B44;
+    border-radius: 50%;
+    border: 0px solid transparent;
+    color: #fafafa;
+    margin-bottom: 64px;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color: #E0373F;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.email-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    background-color: transparent;
+    color: rgb(250, 250, 250);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+.phone-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    background-color: transparent;
+    color: rgb(250, 250, 250);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+.footer-content-wrapper {
+    margin: 0 auto;
+}
+
+
+.email-info:hover,
+.email-info:focus {
+    border: 1px solid #fafafa;
+}
+
+.phone-info:hover,
+.phone-info:focus {
+    border: 1px solid #fafafa;
+}
+
+
+.info-text {
+   
+}
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+
+    .form-section {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .footer-content-wrapper {
+        max-width: 704px;
+    }
+
+    .footer-header {
+        max-width: 542px;
+    }
+
+    .footer-img {
+        width: 70px;
+        height: 70px;
+        border-radius: 24px;
+    }
+
+    .footer-title {
+        font-size: 64px;
+        max-width: 420px;
+    }
+
+    .input-fields {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .input-field {
+        width: 240px;
+    }
+
+    .submit-button {
+        padding: 65px 57px;
+        margin-bottom: 18px;
+    }
+
+    .contact-info {
+        gap: 8px;
+    }
+     .email-info {
+        padding: 18px 32px;
+    }
+
+    .phone-info {
+        padding: 18px 32px;
+    }
+
+    .info-text {
+        font-size: 16px;
+    }
+
+
+}
+
+@media screen and (min-width:1440px) {
+
+    .footer-content-wrapper {
+        max-width: 1048px;
+    }
+
+    .input-field {
+        width: 385px;
+    }
+
+    .form-section {
+        gap: 86px;
+    }
+
+}
