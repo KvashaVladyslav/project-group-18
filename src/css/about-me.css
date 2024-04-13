@@ -41,6 +41,8 @@
   border: none;
   width: 32px;
   height: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .about-me-button-slider-down {
@@ -139,7 +141,6 @@
 .skills-list {
   display: flex;
   flex-direction: row;
-  overflow: hidden;
 }
 
 .skills-list-item {
@@ -151,6 +152,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.skill-name {
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -165,19 +169,29 @@
 .skills-section {
   display: flex;
   align-items: center;
+  overflow: hidden;
+
+  position: relative;
 }
 
 .skills-btn-arrow-right {
   background-color: transparent;
   border: none;
-  width: 28px;
-  height: 28px;
+  width: 35px;
+  height: 35px;
+
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
 }
 
 .icon-svg-arrow-right {
-  fill: #ffffff;
-  width: 28px;
-  height: 28px;
+  fill: #fafafa;
+  width: 22px;
+  height: 22px;
+  opacity: 0.2;
 }
 
 @media screen and (min-width: 768px) {
@@ -232,6 +246,9 @@
   .skills-list-item {
     width: 146px;
     height: 146px;
+  }
+
+  .skill-name {
     font-size: 20px;
   }
 }
@@ -288,6 +305,16 @@
     padding-bottom: 32px;
   }
 
+  .about-me-button-slider-down {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-svg-slider-down {
+    width: 35px;
+    height: 35px;
+  }
+
   .role-list {
     max-width: 1376px;
   }
@@ -299,5 +326,26 @@
   .skills-list {
     margin: 0 auto;
     max-width: 1376px;
+  }
+
+  .skills-section {
+    margin-top: 96px;
+    position: relative;
+  }
+
+  .skills-btn-arrow-right {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-svg-arrow-right {
+    width: 35px;
+    height: 35px;
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
   }
 }
