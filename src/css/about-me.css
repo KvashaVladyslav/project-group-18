@@ -140,7 +140,8 @@
 
 .skills-list {
   display: flex;
-  flex-direction: row;
+
+  overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 .skills-list-item {
@@ -152,6 +153,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  flex-shrink: 0; /* Prevent items from shrinking */
 }
 
 .skill-name {
@@ -175,10 +178,12 @@
 }
 
 .skills-btn-arrow-right {
-  background-color: transparent;
+  /* background-color: transparent; */
   border: none;
-  width: 35px;
-  height: 35px;
+  width: 29px;
+  height: 130px;
+
+  background-color: #1c1d20;
 
   position: absolute;
   right: 0;
@@ -243,6 +248,15 @@
     max-width: 768px;
   }
 
+  .skills-list {
+    /* Adjust max-width for the visible portion of the list */
+    max-width: calc(100% - 45px); /* Subtract button width */
+  }
+
+  .skills-section {
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+
   .skills-list-item {
     width: 146px;
     height: 146px;
@@ -250,6 +264,11 @@
 
   .skill-name {
     font-size: 20px;
+  }
+
+  .skills-btn-arrow-right {
+    width: 105px;
+    height: 200px;
   }
 }
 
@@ -326,6 +345,8 @@
   .skills-list {
     margin: 0 auto;
     max-width: 1376px;
+
+    max-width: calc(100% - 40px); /* Adjust for button width */
   }
 
   .skills-section {
