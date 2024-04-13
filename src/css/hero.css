@@ -115,4 +115,8 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .hero-social-list {
+    padding: 18px 20px 18px 20px;
+  }
 }
