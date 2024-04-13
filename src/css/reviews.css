@@ -8,14 +8,11 @@ h2 {
 }
 
 .review-container{
-    width: 343px;
-    height: 302px;
     margin-left: 16px;
     margin-right: 16px;
 }
 
 .review-card {
-    width: 343px;
     display: flex;
     padding: 32px 24px;
     flex-direction: column;
@@ -30,6 +27,7 @@ h2 {
     height: 48px;
     border-radius: 10px;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat, #E0E0E0;
+    margin-bottom: 32px;
 }
 
 .author-name{
@@ -38,10 +36,10 @@ h2 {
     font-weight: 600;
     line-height: 30px;
     letter-spacing: -0.4px;
+    margin-bottom: 8px;
 }
 
 .review-text{
-    width: 295px;
     color: rgba(250, 250, 250, 0.60);
     font-size: 16px;
     font-weight: 500;
@@ -52,9 +50,8 @@ h2 {
 
 .review-list{
     margin-bottom: 32px;
+    width: 285px;
 }
-
-
 
 
 .project-arrow-svg {
@@ -77,9 +74,6 @@ h2 {
     align-items: center;
 }
 
-.swiper {
-    margin-bottom: 32px;
-}
 
 .project-arrow-svg {
     width: 24px;
