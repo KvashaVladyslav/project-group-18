@@ -37,6 +37,7 @@ body {
 
     .section-footer {
         padding-top: 32px;
+        padding-bottom: 32px;
     }
 }
 
@@ -54,6 +55,7 @@ body {
 
     .section-footer {
         padding-top: 48px;
+        padding-bottom: 169px;
     }
 
 }
