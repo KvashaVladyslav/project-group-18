@@ -35,6 +35,7 @@
   <img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg' height="120">
   <img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg' height="120">
  <img src='https://static.vecteezy.com/system/resources/previews/016/833/880/large_2x/github-logo-git-hub-icon-with-text-on-white-background-free-vector.jpg' height="120">
+ <img src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vite/vite-original-wordmark.svg' height="120">
 </div>
 
 ## Наша команда
