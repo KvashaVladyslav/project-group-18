@@ -3,6 +3,12 @@ const burgerIcon = document.querySelector(".open-mobile-menu-btn")
 const closeBtn = document.querySelector(".svg-close")
 const menu = document.querySelector(".header-nav-menu-link")
 const menuList = document.querySelector(".menu-list")
+const links = document.querySelectorAll(".link-modal")
+
+links.forEach(link => link.addEventListener("click", () => {
+    mobileWindow.classList.add("hidden")
+}))
+
 
 menu.addEventListener("click", () => {
     if (menuList.classList.contains("visually-hidden")) {
@@ -13,10 +19,18 @@ menu.addEventListener("click", () => {
 });
 
 burgerIcon.addEventListener("click", () => {
-    mobileWindow.classList.remove("hidden")
+    showModal()
 })
 
 closeBtn.addEventListener("click", () => {
-     mobileWindow.classList.add("hidden")
+    hideModal()
 })
 
+
+function showModal() {
+     mobileWindow.classList.remove("hidden")
+}
+
+function hideModal() {
+     mobileWindow.classList.add("hidden")
+}
