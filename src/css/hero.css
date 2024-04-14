@@ -1,27 +1,25 @@
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 812px;
   background: url(../img/hero/hero-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
-  box-size: cover;
+  background-size: cover;
 }
 
 .hero-title {
-  margin-top: 281px;
-  bottom: 281px;
   color: rgb(250, 250, 250);
   font-size: 50px;
   font-weight: 500;
-  letter-spacing: -3%;
+  letter-spacing: -0.03em;
   text-align: left;
   text-transform: uppercase;
+  line-height: 1;
+  padding-top: 300px;
+  padding-bottom: 274px;
 }
 
 .hero-social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   gap: 4px;
 }
@@ -61,7 +59,7 @@
     background: url(../img/hero/hero-tablet.png);
     background-repeat: no-repeat;
     background-position: center;
-    box-size: cover;
+    background-size: cover;
   }
 
   .hero-title {
@@ -105,7 +103,7 @@
     background: url(../img/hero/hero-desktop.png);
     background-repeat: no-repeat;
     background-position: center;
-    box-size: cover;
+    background-size: cover;
   }
 
   .hero-title {
