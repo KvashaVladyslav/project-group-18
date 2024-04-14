@@ -20,8 +20,8 @@ section {
 }
 
 .covers {
-  max-width: 343px;
-  height: 508px;
+
+  max-height: 508px;
   overflow: hidden;
   background-image: url(../img/covers/background.png);
   background-size: cover;
@@ -61,8 +61,7 @@ section {
   }
 
   .covers {
-    max-width: 704px;
-    height: 960px;
+    max-height: 960px;
   }
 
   .covers-list {
@@ -80,8 +79,7 @@ section {
     padding: 82px 0px;
   }
   .covers {
-    max-width: 1440px;
-    height: 960px;
+    max-height: 960px;
   }
 
   .covers-list {
