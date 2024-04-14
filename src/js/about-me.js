@@ -12,8 +12,8 @@ function toggleList(button, list) {
   svgElement.setAttribute(
     'href',
     isHidden
-      ? '/img/icons.svg#icon-arrow-up'
-      : '/img/icons.svg#icon-arrow-down'
+      ? './img/icons.svg#icon-arrow-up'
+      : './img/icons.svg#icon-arrow-down'
   );
 }
 function handleClick(event) {
