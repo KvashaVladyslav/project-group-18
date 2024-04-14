@@ -8,17 +8,20 @@ section {
   padding: 32px 0px;
 }
 
-.container {
-  /* position: relative; */
-  width: 343px;
-  padding: 0px 16px;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .covers {
-  /* position: absolute;
-  right: -375px;
-  left: 0; */
-  width: 100%;
+  max-width: 343px;
+  height: 508px;
   overflow: hidden;
   background-image: url(../img/covers/background.png);
   background-size: cover;
@@ -32,17 +35,14 @@ section {
 
 .covers-item {
   flex-shrink: 0;
-  margin: 10px;
-  display: flex;
-  animation-name: none;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-.covers-img {
   width: 282px;
   height: 163px;
+  margin: 10px;
+  display: flex;
+  animation-name: coversItem;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 @keyframes coversItem {
@@ -56,33 +56,39 @@ section {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 704px;
-    max-width: 768px;
-    padding: 0px 32px;
-    margin: 0 auto;
-  }
-
   section {
     padding: 48px 0px;
   }
 
-  .covers-img {
+  .covers {
+    max-width: 704px;
+    height: 960px;
+  }
+
+  .covers-list {
+    margin: 10px 0;
+  }
+
+  .covers-item {
     width: 544px;
     height: 314px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-
   section {
     padding: 82px 0px;
   }
+  .covers {
+    max-width: 1440px;
+    height: 960px;
+  }
 
-  .covers-img {
+  .covers-list {
+    margin: 10px 0;
+  }
+
+  .covers-item {
     width: 544px;
     height: 314px;
   }
