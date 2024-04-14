@@ -1,4 +1,4 @@
-.hero {
+ro {
   background: url(../img/hero/hero-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -13,8 +13,7 @@
   text-align: left;
   text-transform: uppercase;
   line-height: 1;
-  padding-top: 300px;
-  padding-bottom: 274px;
+  padding: 241px 0px 212px;
 }
 
 .hero-social-list {
@@ -28,33 +27,56 @@
   color: rgb(250, 250, 250);
   font-size: 14px;
   font-weight: 400;
-  line-height: 17px;
-  text-align: left;
-
-  position: static;
-  width: 37px;
-  height: 37px;
+  line-height: 0.9;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   box-sizing: border-box;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  margin-bottom: 32px;
+  padding: 10px 11px;
+}
+
+.hero-social-item.icon {
+  max-width: 37px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  justify-content: flex-end;
+}
+
+.hero-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fafafa20;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  padding: 0px 10px;
 }
 
 .hero-social-item-email {
-  width: 160px;
-  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  color: rgb(250, 250, 250);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 0.9;
+  max-height: 37px;
 }
 
 /*---------------TABLETS HERO STYLES-----------*/
 
 @media screen and (min-width: 768px) {
   .hero {
-    height: 1024px;
     padding-left: 32px;
     background: url(../img/hero/hero-tablet.png);
     background-repeat: no-repeat;
@@ -66,7 +88,6 @@
     font-size: 90px;
     font-weight: 400;
     text-transform: uppercase;
-    margin-top: 300px;
   }
   .hero-social-list {
     justify-content: flex-end;
@@ -80,17 +101,22 @@
     padding-right: 10px;
   }
 
-  .hero-social-item {
+  .hero-social-item.icon {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
-    width: 56px;
-    height: 56px;
+    max-width: 55px;
+    max-height: 55px;
+    padding: 23px;
   }
 
-  .hero-social-item-email {
-    width: 200px;
-    height: 56px;
+  .content-wrapper {
+  }
+
+  .hero-post {
+    border-radius: 40px;
+    padding: 18px 24px;
+    max-height: 55px;
   }
 }
 
@@ -98,7 +124,6 @@
 
 @media screen and (min-width: 1440px) {
   .hero {
-    height: 900px;
     padding-left: 32px;
     background: url(../img/hero/hero-desktop.png);
     background-repeat: no-repeat;
@@ -108,14 +133,9 @@
 
   .hero-title {
     display: flex;
-    width: 1120px;
-    height: 270px;
+    max-width: 1084px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .hero-social-list {
-    padding: 18px 20px 18px 20px;
   }
 }
 
