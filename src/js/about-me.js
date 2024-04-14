@@ -32,3 +32,19 @@ function handleClick(event) {
     toggleList(currentBtn, educationList);
   }
 }
+const list = document.querySelector('.skills-list');
+const arrow = document.querySelector('.skills-btn-arrow-right');
+let currentItem = list.firstElementChild;
+arrow.addEventListener('click', () => {
+  let nextItem = currentItem.nextElementSibling;
+  if (nextItem) {
+    currentItem.classList.remove('red');
+    nextItem.classList.add('red');
+    currentItem = nextItem;
+  }
+  if (nextItem === null) {
+    currentItem.classList.remove('red');
+    currentItem = list.firstElementChild;
+    currentItem.classList.add('red');
+  }
+});
