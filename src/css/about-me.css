@@ -190,7 +190,8 @@
 }
 
 .icon-svg-arrow-right {
-  fill: #fafafa;
+  fill: none;
+  stroke: #ffffff;
   width: 22px;
   height: 22px;
   opacity: 0.2;
