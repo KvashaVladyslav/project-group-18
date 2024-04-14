@@ -1,3 +1,7 @@
+header {
+    position: absolute;
+    width: 100%;
+}
 
 .open-mobile-order-btn{
     display: none;
@@ -96,7 +100,6 @@
 .open-mobile-menu-btn{
     background-color: transparent;
     border: 0px solid transparent;
-    width: 28px;
     height: 28px;
     cursor: pointer;
 }
@@ -104,14 +107,9 @@
 .svg-burger {
     stroke: rgb(250, 250, 250);
     fill: rgb(250, 250, 250);
-    width: 100%;
-        height: 100%;
+    width: 28px;
+    height: 100%;
 }
-
-
-
-
-
 
  .modal-phone-window {
      position: fixed;
@@ -174,7 +172,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 60px;
-        background: rgb(237, 59, 68);
+        background: #ED3B44;
         font-size: 16px;
         font-weight: 500;
         line-height: 19px;
@@ -182,15 +180,35 @@
         color: rgb(250, 250, 250);
  }
 
- 
+ .open-mobile-order-btn-modal:hover,
+ .open-mobile-order-btn-modal:focus {
+    background-color: #E0373F;
+ }
 
  .modal-phone-window .link {
     color: rgb(250, 250, 250);
         font-size: 16px;
         font-weight: 500;
         line-height: 19px;
-        letter-spacing: -2%;    
-        text-decoration-line: underline;
+        letter-spacing: -0.02em;
+        position: relative;
+ }
+
+ .modal-phone-window .link:hover,
+ .modal-phone-window .link:focus {
+    color: #E0373F;
+ }
+
+ .modal-phone-window .link:hover::after
+ .modal-phone-window .link:focus::after {
+    color: #E0373F;
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-width: 0 0 1px;
+    border-style: solid;
  }
 
 
