@@ -1,16 +1,18 @@
-header{
-    position: relative;
-}
 
 .open-mobile-order-btn{
     display: none;
     opacity: 0;
 }
 
+.open-mobile-order-btn:focus,
+.open-mobile-order-btn:hover {
+    background-color: #E0373F;
+}
+
 .header-nav-menu-link {
     display: none;
     opacity: 0;
-    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .flex-logo{
@@ -22,6 +24,7 @@ header{
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 .menu-list{
@@ -38,6 +41,27 @@ header{
     visibility: visible;
 }
 
+.link:hover,
+.link:focus {
+    color: #E0373F;
+}
+
+.link {
+    text-decoration: none;
+    position: relative;
+}
+
+.link:hover::after {
+    color: #E0373F;
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
 .menu-nav.link {
     color: rgb(250, 250, 250);
     font-size: 16px;
@@ -50,6 +74,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding-top: 32px;
+    align-items: flex-start;
 }
 
 .header-img{
@@ -210,9 +235,25 @@ header{
                                         font-weight: 500;
                                         line-height: 19px;
                                         letter-spacing: -2%;
-                                    
-                                        text-decoration-line: underline;
+                                        text-decoration-line: none;
+                                        position: relative;
                                 }
+
+    .header-nav-menu-link::after {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-width: 0 0 1px;
+        border-style: solid;
+                                }
+
+                                .header-nav-menu-link:hover,
+                                .header-nav-menu-link:focus {
+                                    color: #E0373F;
+                                }
+
                                 .modal-phone-window{
                                     display: none;
                                     opacity: 0;
@@ -228,4 +269,7 @@ header{
              opacity: 0;
          }
 
+    .header-nav {
+        align-items: flex-start;
+    }
 }
