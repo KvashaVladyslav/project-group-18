@@ -63,7 +63,6 @@
 
 .modal-text {
     max-width: 280px;
-    max-height: 148px;
     display: flex;
     flex-direction: column;
     justify-content: center;
