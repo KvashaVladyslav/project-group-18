@@ -212,8 +212,8 @@
   }
 
   .about-me-img {
-    background-image: url(../img/about-me/about-me-tablet.png),
-      url(../img/about-me/about-me-tablet@2x.png);
+    background-image: url(/img/about-me/about-me-tablet.png),
+      url(/img/about-me/about-me-tablet@2x.png);
   }
 
   .about-me-intro {
@@ -289,8 +289,8 @@
   }
 
   .about-me-img {
-    background-image: url(../img/about-me/about-me-desktop.png),
-      url(../img/about-me/about-me-desktop@2x.png);
+    background-image: url(/img/about-me/about-me-desktop.png),
+      url(/img/about-me/about-me-desktop@2x.png);
   }
 
   .about-me-intro {
