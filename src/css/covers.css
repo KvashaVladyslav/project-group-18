@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+section {
+  padding: 32px 0px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.covers {
+  max-width: 343px;
+  height: 508px;
+  overflow: hidden;
+  background-image: url(../img/covers/background.png);
+  background-size: cover;
+}
+
+.covers-list {
+  display: flex;
+  justify-content: center;
+  transform: rotate(17deg);
+}
+
+.covers-item {
+  flex-shrink: 0;
+  width: 282px;
+  height: 163px;
+  margin: 10px;
+  display: flex;
+  animation-name: coversItem;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes coversItem {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 48px 0px;
+  }
+
+  .covers {
+    max-width: 704px;
+    height: 960px;
+  }
+
+  .covers-list {
+    margin: 10px 0;
+  }
+
+  .covers-item {
+    width: 544px;
+    height: 314px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  section {
+    padding: 82px 0px;
+  }
+  .covers {
+    max-width: 1440px;
+    height: 960px;
+  }
+
+  .covers-list {
+    margin: 10px 0;
+  }
+
+  .covers-item {
+    width: 544px;
+    height: 314px;
+  }
+}
