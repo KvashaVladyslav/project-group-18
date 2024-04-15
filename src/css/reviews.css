@@ -7,12 +7,8 @@ h2 {
     margin-bottom: 32px;
 }
 
-.review-container{
-    margin-left: 16px;
-    margin-right: 16px;
-}
 
-.review-card {
+.review-card.swiper-slide {
     display: flex;
     padding: 32px 24px;
     flex-direction: column;
@@ -21,6 +17,10 @@ h2 {
     border-radius: 20px;
     border: 1px solid rgba(250, 250, 250, 0.20);
     min-height: 352px;
+    max-width: 343px;
+    width: 100%;
+    margin: 0 auto;
+
 }
 
 .img-avatar{
@@ -28,7 +28,6 @@ h2 {
     height: 48px;
     border-radius: 10px;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat, #E0E0E0;
-    margin-bottom: 32px;
 }
 
 .author-name{
@@ -37,7 +36,6 @@ h2 {
     font-weight: 600;
     line-height: 30px;
     letter-spacing: -0.4px;
-    margin-bottom: 8px;
 }
 
 .review-text{
@@ -51,6 +49,8 @@ h2 {
 
 .review-list{
     max-width: 343px;
+    display: block;
+    gap: 16px;
 }
 
 
@@ -64,8 +64,9 @@ h2 {
     justify-content: center;
 }
 
-.swiper {
+.swiper-for-review {
     margin-bottom: 0;
+    max-width: 375px;
 }
 
 .swiper-btn {
@@ -88,18 +89,13 @@ h2 {
     margin-right: 12px;
 }
 
-.swiper-btn-prev.swiper-button-disabled,
-.swiper-btn-next.swiper-button-disabled {
+.swiper-btn-prev-review.swiper-button-disabled,
+.swiper-btn-next-review.swiper-button-disabled {
     opacity: 0.35;
     cursor: not-allowed;
     pointer-events: none;
 }
 
-.review-card.swiper-slide {
-    max-width: 343px;
-    width: 100%;
-    margin: 0 auto;
-}
 
 @media screen and (min-width: 768px) {
     .review-list{
