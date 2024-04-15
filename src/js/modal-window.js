@@ -33,4 +33,9 @@ class ModalWindow {
     }
 }
 
+const linksModal = document.querySelectorAll(".link")
+linksModal.forEach(link => link.addEventListener("click", () => {
+    mobileWindow.classList.add("hidden")
+}))
+
 export default new ModalWindow();
