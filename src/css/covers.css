@@ -27,6 +27,14 @@ section {
   background-size: cover;
 }
 
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .covers {
+    background-image: url(/img/covers/background@2x.png);
+  }
+}
+
 .covers-list {
   display: flex;
   justify-content: center;

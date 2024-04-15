@@ -2,6 +2,10 @@
   color: #ed3b44;
 }
 
+.about-me-section {
+  padding-top: 64px;
+}
+
 .websites {
   color: #fafafa60;
 }
@@ -202,10 +206,6 @@
     width: 100%;
   }
 
-  .about-me-img {
-    background-image: url(/img/about-me/about-me-tablet.png),
-      url(/img/about-me/about-me-tablet@2x.png);
-  }
 
   .about-me-intro {
     padding: 64px 64px 436px 64px;
@@ -264,6 +264,10 @@
     margin: 0px auto 64px;
   }
 
+  .about-me-section {
+    padding-top: 96px;
+  }
+
   .about-me-paragraph-container {
     align-items: flex-end;
   }
@@ -276,10 +280,6 @@
     margin: 0px;
   }
 
-  .about-me-img {
-    background-image: url(/img/about-me/about-me-desktop.png),
-      url(/img/about-me/about-me-desktop@2x.png);
-  }
 
   .about-me-intro {
     margin: 64px, 64px, 436px, 64px;

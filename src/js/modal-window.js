@@ -4,6 +4,7 @@ const closeBtn = document.querySelector(".close-btn");
 const titleElement = document.querySelector(".modal-title");
 const textElement = document.querySelector(".modal-paragraf");
 
+
 class ModalWindow {
     open() {
         modalWindow.classList.remove("hidden");
@@ -33,9 +34,5 @@ class ModalWindow {
     }
 }
 
-const linksModal = document.querySelectorAll(".link")
-linksModal.forEach(link => link.addEventListener("click", () => {
-    mobileWindow.classList.add("hidden")
-}))
 
 export default new ModalWindow();
