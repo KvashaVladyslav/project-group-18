@@ -1,3 +1,7 @@
+.section-footer .container {
+    padding-top: 32px;
+}
+
 .footer-content-wrapper {
     max-width: 343px;
 }
@@ -170,6 +174,9 @@
 
 
 @media screen and (min-width:768px) {
+    .section-footer .container {
+        padding-top: 80px;
+    }
 
     .form-section {
         display: flex;
@@ -231,7 +238,10 @@
 }
 
 @media screen and (min-width:1440px) {
-
+    .section-footer .container {
+        padding-top: 85px;
+    }
+    
     .footer-content-wrapper {
         max-width: 1048px;
     }
