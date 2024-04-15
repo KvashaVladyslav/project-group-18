@@ -46,7 +46,6 @@ form.addEventListener("submit", async (event) => {
     const { email, comment } = event.target.elements;
     try {
         const response = await apiPost(email.value, comment.value);
-        console.log(response);
         if (response) {
             modalWindow.render(response.title, response.message);
             modalWindow.open();
