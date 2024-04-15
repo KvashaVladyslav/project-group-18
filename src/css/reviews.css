@@ -27,6 +27,8 @@
     min-width: 100px;
     width: 100%;
     box-sizing: border-box;
+    min-height: 302px;
+    height: 100%;
 }
 
 .img-avatar{
@@ -103,7 +105,9 @@
         max-width: 344px;
         box-sizing: border-box;
         margin-left: 16px;
+        min-height: 302px;
         height: 100%;
+
     }
     .review-container{
         margin-left: 16px;
