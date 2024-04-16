@@ -2,7 +2,10 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 import icons from "../img/icons.svg"
-new Accordion('.about-me-title-container');
+
+new Accordion('.about-me-title-container', {
+  duration: 1000,
+});
 
 const btns = document.querySelectorAll('.about-me-button-slider-down');
 btns.forEach(btn => btn.addEventListener('click', handleClick));
@@ -14,7 +17,7 @@ function toggleList(button, list) {
     'href',
     isHidden
       ? `${icons}#icon-arrow-up`
-      : `${icons}#icon-arrow-down`
+      : `${icons}#icon-arrow-down`,
   );
 }
 function handleClick(event) {
@@ -25,27 +28,11 @@ function handleClick(event) {
       '.about-me-paragraph-container'
     );
     toggleList(currentBtn, aboutMeParagraphContainer);
-  } else if (closest.querySelector('.role-list')) {
-    const roleList = closest.querySelector('.role-list');
+  } else if (closest.querySelector('.about-me-paragraph-container')) {
+    const roleList = closest.querySelector('.about-me-paragraph-container');
     toggleList(currentBtn, roleList);
-  } else if (closest.querySelector('.education-list')) {
-    const educationList = closest.querySelector('.education-list');
+  } else if (closest.querySelector('.about-me-paragraph-container')) {
+    const educationList = closest.querySelector('.about-me-paragraph-container');
     toggleList(currentBtn, educationList);
   }
 }
-const list = document.querySelector('.skills-list');
-const arrow = document.querySelector('.skills-btn-arrow-right');
-let currentItem = list.firstElementChild;
-arrow.addEventListener('click', () => {
-  let nextItem = currentItem.nextElementSibling;
-  if (nextItem) {
-    currentItem.classList.remove('red');
-    nextItem.classList.add('red');
-    currentItem = nextItem;
-  }
-  if (nextItem === null) {
-    currentItem.classList.remove('red');
-    currentItem = list.firstElementChild;
-    currentItem.classList.add('red');
-  }
-});

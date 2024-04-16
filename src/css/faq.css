@@ -56,6 +56,22 @@
     padding-top: 16px;
 }
 
+.accordion-faq.active .svg-icon-faq {
+    transform: rotate(180deg);
+}
+
+.text-wrapper-faq {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.accordion-faq.active .text-wrapper-faq {
+    max-height: 160px;
+    transition: 750ms ease-in-out;
+}
+
+
 @media screen and (min-width: 768px) {
 
     .other-list-item {
@@ -101,21 +117,5 @@
 
     .main-list-item.second p {
         padding-left: 32px;
-    }
-
-    .other-list-item {
-        min-height: 163px;
-    }
-
-    .main-list-item.first {
-        min-width: 687px;
-        max-width: 688px;
-        max-height: 600px;
-    }
-
-    .main-list-item.second {
-        min-width: 687px;
-        max-width: 688px;
-        max-height: 584px;
     }
 }
