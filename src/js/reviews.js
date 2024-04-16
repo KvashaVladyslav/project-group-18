@@ -4,9 +4,11 @@ import { Navigation, Pagination, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+
 const list_html_review = document.querySelector(".review-list");
+
 apiGet().then(list_of_reviews => {
-    const swiper = new Swiper('.swiper', {
+    const swiperReviews = new Swiper('.swiper reviews', {
         modules: [Navigation, Pagination, Keyboard],
         navigation: {
             nextEl: '.swiper-btn-next',
