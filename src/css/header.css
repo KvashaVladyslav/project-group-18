@@ -3,6 +3,10 @@ header {
     width: 100%;
 }
 
+.svg-jefferson {
+    fill: #fafafa;
+}
+
 .open-mobile-order-btn{
     display: none;
     opacity: 0;

@@ -1,6 +1,10 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
+import Swiper from 'swiper';
+import { Keyboard, Mousewheel, Navigation } from 'swiper/modules';
+import 'swiper/css';
+
 import icons from "../img/icons.svg"
 
 new Accordion('.about-me-title-container', {
@@ -36,3 +40,36 @@ function handleClick(event) {
     toggleList(currentBtn, educationList);
   }
 }
+
+const swiperElem = document.querySelector(".skills-section .swiper")
+const swiperBtn = document.querySelector(".skills-btn-arrow-right")
+const swiperBySection = new Swiper(swiperElem, {
+  modules: [Navigation, Keyboard, Mousewheel],
+  direction: 'horizontal',
+  spaceBetween: 0,
+  navigation: {
+    nextEl: swiperBtn,
+  },
+  slidesPerView: 2,
+  initialSlide: 1,
+  breakpoints: {
+    767: {
+      slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 6,
+    },
+  },
+  mousewheel: {
+    enabled: true,
+    invert: true,
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  loop: true,
+  allowTouchMove: true,
+  followFinger: true,
+  simulateTouch: true,
+});

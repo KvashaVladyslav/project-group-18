@@ -145,7 +145,6 @@
 
 .skills-list {
   display: flex;
-  overflow-x: hidden;
   max-width: 260px;
 }
 
@@ -170,9 +169,10 @@
   line-height: 24px;
 }
 
-.skills-list-item.red {
+.skills-list-item.swiper-slide-active {
   background-color: rgb(237, 59, 68);
 }
+
 
 .skills-section {
   display: flex;
@@ -335,8 +335,7 @@
   }
 
   .skills-list {
-    max-width: 1376px;
-    padding-left: 32px;
+    max-width: 1200px;
   }
 
   .skills-section {
@@ -349,4 +348,7 @@
     height: 40px;
   }
 
+  .swiper.about-me {
+    margin-left: 32px;
+  }
 }
