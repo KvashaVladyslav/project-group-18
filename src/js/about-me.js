@@ -1,6 +1,7 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
+import icons from "../img/icons.svg"
 new Accordion('.about-me-title-container');
 
 const btns = document.querySelectorAll('.about-me-button-slider-down');
@@ -12,8 +13,8 @@ function toggleList(button, list) {
   svgElement.setAttribute(
     'href',
     isHidden
-      ? '/img/icons.svg#icon-arrow-up'
-      : '/img/icons.svg#icon-arrow-down'
+      ? `${icons}#icon-arrow-up`
+      : `${icons}#icon-arrow-down`
   );
 }
 function handleClick(event) {

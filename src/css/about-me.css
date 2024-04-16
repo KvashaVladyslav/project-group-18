@@ -6,6 +6,7 @@
   padding-top: 64px;
 }
 
+
 .websites {
   color: #fafafa60;
 }
@@ -196,7 +197,8 @@
   .intro-wrapper {
     margin-bottom: 64px;
   }
-
+  
+  
   .intro {
     background: #242527;
     border-radius: 24px;
@@ -205,7 +207,6 @@
   .img {
     width: 100%;
   }
-
 
   .about-me-intro {
     padding: 64px 64px 436px 64px;
@@ -279,7 +280,6 @@
   .img {
     margin: 0px;
   }
-
 
   .about-me-intro {
     margin: 64px, 64px, 436px, 64px;
