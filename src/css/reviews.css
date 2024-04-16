@@ -49,7 +49,7 @@ h2 {
 
 
 .review-list{
-    max-width: 343px;
+    max-width: 344px;
 }
 
 
@@ -95,16 +95,21 @@ h2 {
 }
 
 .review-card.swiper-slide {
-    max-width: 343px;
+    max-width: 344px;
     width: 100%;
     margin: 0 auto;
+}
+
+.swiper-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
 }
 
 @media screen and (min-width: 768px) {
     .review-list{
         margin: 0;
         max-width: 704px;
-        gap: 10px;
     }
     
 }
@@ -113,7 +118,6 @@ h2 {
     .review-list{
         margin: 0;
         max-width: 1376px;
-        gap: 16px;
     }
 
     .review-card.swiper-slide {

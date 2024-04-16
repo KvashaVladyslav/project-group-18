@@ -149,7 +149,7 @@
   max-width: 260px;
 }
 
-.skills-list-item {
+.swiper-slide.skills-list-item {
   border: 1px solid #fafafa20;
   padding: 51px 30px;
   border-radius: 50%;
@@ -192,6 +192,10 @@
   width: 22px;
   height: 22px;
   opacity: 0.2;
+}
+
+.swiper.about-me {
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -331,10 +335,8 @@
   }
 
   .skills-list {
-    margin-left: 32px;
     max-width: 1376px;
-
-    max-width: calc(100% - 40px);
+    padding-left: 32px;
   }
 
   .skills-section {
