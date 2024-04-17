@@ -40,6 +40,38 @@ apiGet().then(list_of_reviews => {
         }
     });
     list_html_review.insertAdjacentHTML('beforeend', renderReviews(list_of_reviews));
+    const nextBtn = document.querySelector('.reviews .swiper-btn-next');
+const prevBtn = document.querySelector('.reviews .swiper-btn-prev');
+  prevBtn.addEventListener("keypress", (event) => {
+        const keyName = event.key;
+    if (keyName === 'Enter') {
+      prevImg();
+    }
+  });
+  nextBtn.addEventListener("keypress", (event) => {
+        const keyName = event.key;
+    if (keyName === 'Enter') {
+      nextImg();
+    }
+  });
+function prevImg() {
+  swiper.on("keyPress", (swiper, keyCode) => {
+    switch (keyCode) {
+      case 13:
+        swiper.slidePrev();
+        break;
+    }
+  });
+};
+function nextImg() {
+  swiper.on("keyPress", (swiper, keyCode) => {
+    switch (keyCode) {
+      case 13:
+        swiper.slideNext();
+        break;
+    }
+  });
+};
 })
   function renderReview(review) {
         return `
@@ -52,4 +84,4 @@ apiGet().then(list_of_reviews => {
     }
     function renderReviews(reviews) {
         return reviews.map(review => renderReview(review)).join("");
-}
+    } 

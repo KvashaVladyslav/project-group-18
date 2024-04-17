@@ -36,14 +36,14 @@ header {
     gap: 20px;
 }
 
-.menu-list{
-    display: flex;
+.menu-list {
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.5s ease, visibility 0.5s ease;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 .menu-list {
     opacity: 1;
@@ -221,6 +221,10 @@ header {
     .container {
             max-width: 768px;
             padding: 0px 32px;
+        }
+
+        .menu-list {
+            display: flex;
         }
     
         .open-mobile-menu-btn{

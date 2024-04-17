@@ -1,8 +1,6 @@
-// У файлі main.js
-// core version + navigation, pagination modules:
+
 import Swiper from 'swiper';
 import { Navigation, Pagination, Keyboard, Mousewheel, EffectCreative, EffectCards } from 'swiper/modules';
-// import Swiper and modules styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -34,3 +32,35 @@ const swiper = new Swiper('.project .swiper.project', {
   },
 
 });
+const nextBtn = document.querySelector('.project .swiper-btn-next');
+const prevBtn = document.querySelector('.project .swiper-btn-prev');
+  prevBtn.addEventListener("keypress", (event) => {
+        const keyName = event.key;
+    if (keyName === 'Enter') {
+      prevImg();
+    }
+  });
+  nextBtn.addEventListener("keypress", (event) => {
+        const keyName = event.key;
+    if (keyName === 'Enter') {
+      nextImg();
+    }
+  });
+function prevImg() {
+  swiper.on("keyPress", (swiper, keyCode) => {
+    switch (keyCode) {
+      case 13:
+        swiper.slidePrev();
+        break;
+    }
+  });
+};
+function nextImg() {
+  swiper.on("keyPress", (swiper, keyCode) => {
+    switch (keyCode) {
+      case 13:
+        swiper.slideNext();
+        break;
+    }
+  });
+};

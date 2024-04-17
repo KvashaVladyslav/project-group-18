@@ -150,10 +150,9 @@
 
 .swiper-slide.skills-list-item {
   border: 1px solid #fafafa20;
-  padding: 51px 30px;
   border-radius: 50%;
-  max-width: 130px;
-  max-height: 130px;
+  width: 130px;
+  height: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,6 +195,23 @@
 
 .swiper.about-me {
   margin: 0;
+}
+
+.about-me-paragraph-container.visually-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.5s ease, visibility 1.5s ease;
+}
+
+.about-me-paragraph-container.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.about-me-paragraph-container {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.5s ease, visibility 1.5s ease;
 }
 
 @media screen and (min-width: 768px) {
@@ -251,10 +267,9 @@
     overflow-x: auto;
   }
 
-  .skills-list-item {
-    min-width: 200px;
-    min-height: 200px;
-    padding: 96px 45px;
+  .swiper-slide.skills-list-item {
+    width: 200px;
+    height: 200px;
   }
 
   .skill-name {
@@ -307,7 +322,6 @@
 
   .about-me-text {
     max-width: 612px;
-    padding-right: 68px;
   }
 
   .about-me-item {
@@ -348,7 +362,16 @@
     height: 40px;
   }
 
+  .swiper-slide.skills-list-item {
+    width: 200px;
+    height: 200px;
+  }
+
   .swiper.about-me {
     margin-left: 32px;
+  }
+
+  .about-me-paragraph-container.active {
+    margin-right: 68px;
   }
 }
