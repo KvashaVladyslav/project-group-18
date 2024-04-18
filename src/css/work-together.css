@@ -5,27 +5,7 @@
     background-repeat: no-repeat;
 }
 
-@media screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px),
-  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-  .section-footer {
-    background-image: url(/img/work-together/footer-bg-mobile@2x.png);
-  }
-}
-@media screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-  .section-footer {
-    background-image: url(/img/work-together/footer-bg-tablet@2x.png);
-  }
-}
-@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
-  screen and (min-resolution: 2dppx) and (min-width: 1440px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
-  .section-footer {
-    background-image: url(/img/work-together/footer-bg-desktop@2x.png);
-  }
-}
+
 
 
 .footer-content-wrapper {
@@ -283,4 +263,26 @@
         gap: 86px;
     }
 
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .section-footer {
+    background-image: url(/img/work-together/footer-bg-mobile@2x.png);
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .section-footer {
+    background-image: url(/img/work-together/footer-bg-tablet@2x.png);
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .section-footer {
+    background-image: url(/img/work-together/footer-bg-desktop@2x.png);
+  }
 }
