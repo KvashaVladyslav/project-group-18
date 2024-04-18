@@ -1,0 +1,131 @@
+.svg-icon-faq {
+    fill: none;
+    stroke: #fafafa;
+    
+}
+
+.title-button-wrapper-faq {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.svg-icon-btn-faq {
+    border: 1px solid #fafafa20;
+    border-radius: 50%;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+}
+
+.other-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.other-list-item {
+    border-bottom: 1px solid #fafafa20;
+    padding-bottom: 20px;
+}
+
+.main-list-item {
+    border-top: 1px solid #fafafa20;
+    padding-top: 20px;
+}
+
+.list-item-title-faq {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    max-width: 289px;
+}
+
+.other-list-item-paragraph {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa60;
+    padding-top: 16px;
+}
+
+.accordion-faq.active .svg-icon-faq {
+    transform: rotate(180deg);
+}
+
+.text-wrapper-faq {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.accordion-faq.active .text-wrapper-faq {
+    max-height: 160px;
+    transition: 750ms ease-in-out;
+}
+
+.svg-icon-btn-faq:hover,
+.svg-icon-btn-faq:focus {
+    border: 1px solid #fafafa;
+    transition: 0.5s ease;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .other-list-item {
+        padding-bottom: 24px;
+    }
+
+    .other-list {
+        gap: 32px;
+    }
+
+    .other-list-item-paragraph {
+        padding-top: 26px;
+        max-width: 656px;
+    }
+
+    .list-item-title-faq {
+        max-width: 574px;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) {
+    .main-list {
+        display: flex;
+    }
+
+    .other-list-item.last {
+        padding-bottom: 44px;
+    }
+    
+    .main-list-item.first {
+        border-right: 1px solid #fafafa20;
+    }
+
+    .main-list-item.first .title-button-wrapper-faq {
+        padding-right: 32px;
+    }
+
+    .other-list-item-paragraph {
+        padding-top: 26px;
+        max-width: 90%;
+    }
+
+    .main-list-item.second h3 {
+        padding-left: 32px;
+    }
+
+    .main-list-item.second p {
+        padding-left: 32px;
+    }
+}
