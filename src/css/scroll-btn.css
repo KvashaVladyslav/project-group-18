@@ -15,6 +15,12 @@
     transform: rotate(-60deg);
     padding: 10px 10px;
   }
+
+  .scroll-btn:hover,
+  .scroll-btn:focus {
+    border: 1px solid #fafafa;
+    transition: 0.5s ease;
+  }
   
   @keyframes rotate {
     0% {

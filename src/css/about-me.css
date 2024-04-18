@@ -183,6 +183,7 @@
 .skills-btn-arrow-right {
   border: none;
   background-color: transparent;
+  opacity: 0.2;
 }
 
 .icon-svg-arrow-right {
@@ -190,7 +191,6 @@
   stroke: #ffffff;
   width: 22px;
   height: 22px;
-  opacity: 0.2;
 }
 
 .swiper.about-me {
@@ -215,11 +215,16 @@
   transition: opacity 1.5s ease, visibility 1.5s ease;
 }
 
-.about-me-item:hover,
-.about-me-item:focus {
+.about-me-button-slider-down:hover,
+.about-me-button-slider-down:focus {
   border: 1px solid #fafafa;
 }
 
+.skills-btn-arrow-right:hover,
+.skills-btn-arrow-right:focus {
+  opacity: 1;
+  transition: 0.5s ease;
+}
 
 
 @media screen and (min-width: 768px) {
