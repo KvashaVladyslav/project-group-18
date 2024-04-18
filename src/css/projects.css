@@ -40,7 +40,6 @@
 
 .project-img {
     display: block;
-    max-width: 100%;
     height: auto;
     padding: 100px 16px;
 }
@@ -190,6 +189,7 @@
 @media screen and (min-width: 768px) {
     .project-img {
         padding: 120px 45px;
+        width: 100%;
     }
 }
 
@@ -208,10 +208,6 @@
 
     .main {
         width: 688px;
-    }
-
-    .project-img {
-        padding: 120px 37px;
     }
 
 }

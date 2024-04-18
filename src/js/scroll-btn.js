@@ -1,7 +1,7 @@
 const scrollBtn = document.querySelector('.scroll-btn');
 
 function checkSize() {
-  if (pageYOffset < 150 || window.innerWidth < 768) {
+  if (pageYOffset < 300 || window.innerWidth < 768) {
     scrollBtn.classList.add('visually-hidden');
   } else {
     scrollBtn.classList.remove('visually-hidden');

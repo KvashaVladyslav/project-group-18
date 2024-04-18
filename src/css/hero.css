@@ -16,6 +16,12 @@
   padding: 241px 0px 212px;
 }
 
+@media screen and (max-width:320px) {
+  .hero-title {
+    font-size: 30px;
+  }
+}
+
 .hero-social-list {
   display: flex;
   flex-wrap: wrap;
@@ -57,6 +63,7 @@
   flex-direction: row;
   gap: 4px;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .hero-post {
@@ -68,7 +75,7 @@
   font-size: 14px;
   line-height: 1;
   letter-spacing: -0.03em;
-  padding: 0px 10px;
+  padding: 10px 10px;
 }
 
 .hero-social-item-email {
