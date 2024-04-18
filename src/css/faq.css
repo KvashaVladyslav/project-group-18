@@ -103,6 +103,10 @@
     .main-list {
         display: flex;
     }
+
+    .other-list-item.last {
+        padding-bottom: 44px;
+    }
     
     .main-list-item.first {
         border-right: 1px solid #fafafa20;
