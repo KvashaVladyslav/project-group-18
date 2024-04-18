@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/project-group-18/favicon.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta
+    name="description"
+    content="JavaScript team project, project-group-18, team-name: Error 404">
+    <link rel="icon" type="image/svg+xml" href="/project-group-18/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project-group-18</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-    >
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
       integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    >
+    />
     
     <script type="module" crossorigin src="/project-group-18/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/project-group-18/assets/vendor-cd35d773.js">
@@ -25,19 +28,776 @@
     <link rel="stylesheet" href="/project-group-18/assets/index-ddf88149.css">
   </head>
   <body>
-    <load src="partials/header.html">
+    <header id="header">
+  <div class="container">
+  <nav class="header-nav">
+    <div class="flex-logo">
+      <picture>
+        <source srcset="data:image/jpeg;base64,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 , /project-group-18/assets/header-photo@2x-0f86ba85.jpg 2x">
+        <img class="header-img" src="data:image/jpeg;base64,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" alt="Company's logo" width="80" height="80">
+    </picture>
+    <svg class="svg-jefferson" width="84" height="19">
+      <use href="/project-group-18/assets/icons-71848feb.svg#icon-jefferson"></use>
+    </svg>
+    </div>
+   <div class="menu-nav">
+    <a class="header-nav-menu-link">Menu</a>
+    <ul class="menu-list visually-hidden">
+      <li><a class="link" href="#about-me">About me</a></li>
+      <li><a class="link" href="#benefits">Benefits</a></li>
+      <li><a class="link" href="#projects">Projects</a></li>
+      <li><a class="link" href="#faq">FAQ</a></li>
+    </ul>
+   </div>
+    
+    <button class="open-mobile-menu-btn" type="button" aria-label="Button for open mobile window">
+      <svg class="svg-burger">
+        <use href="/project-group-18/assets/icons-71848feb.svg#icon-burger"></use>
+      </svg>
+    </button>
+      <a class="open-mobile-order-btn" href="#work-together">Order the project</a>
+  </nav>
+  </div>
+
+  <div class="modal-phone-window hidden">
+    <button class="btn-close" type="button" aria-label="Button for closing modal window">
+      <svg class="svg-close">
+        <use href="/project-group-18/assets/icons-71848feb.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="links">
+      <li><a class="link" href="#about-me">About me</a></li>
+      <li><a class="link" href="#benefits">Benefits</a></li>
+      <li><a class="link" href="#projects">Projects</a></li>
+      <li><a class="link" href="#faq">FAQ</a></li>
+    </ul>
+      <a class="open-mobile-order-btn-modal" href="#work-together">Order the project</a>
+  </div>
+</header>
+
+
     <main>
-    <load src="partials/hero.html">
-    <load src="partials/about-me.html">
-    <load src="partials/benefits.html">
-    <load src="partials/projects.html">
-    <load src="partials/faq.html">
-    <load src="partials/covers.html">
-    <load src="partials/reviews.html">
+    <section class="hero id=hero">
+  <div class="container">
+    <h1 class="hero-title">
+      HELLO.<br>
+      I'M FULLSTACK DEVELOPER LLOYD JEFFERSON.
+    </h1>
+    <div class="content-wrapper">
+      <ul class="hero-social-list">
+        <li class="hero-social-item icon">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >IG</a
+          >
+        </li>
+        <li class="hero-social-item icon">
+          <a
+            href="https://www.facebook.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >FB
+          </a>
+        </li>
+        <li class="hero-social-item icon">
+          <a
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >YT
+          </a>
+        </li>
+        <li class="hero-social-item icon">
+          <a
+            href="https://github.com/KvashaVladyslav/project-group-18"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >GT
+          </a>
+        </li>
+      </ul>
+      <a class="hero-post" href="mailto:lloydjefferson@gmail.com"
+        >lloydjefferson@gmail.com</a
+      >
+    </div>
+  </div>
+</section>
+
+    <section class="about-me-section" id="about-me">
+  <div class="container">
+    <h2 class="visually-hidden">About me</h2>
+    <div class="intro-wrapper">
+      <div class="intro">
+        <p class="about-me-intro">
+          I work with people all over the world to create impressive and
+          <span class="functional">functional</span>
+          <span class="websites">websites</span> that reflect each client's
+          unique personality.
+        </p>
+      </div>
+      <picture>
+        <source
+          srcset="/project-group-18/assets/about-me-desktop-e9743eb0.jpg 1x, /project-group-18/assets/about-me-desktop@2x-9153a1be.jpg 2x"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="/project-group-18/assets/about-me-tablet-62c74049.jpg 1x, /project-group-18/assets/about-me-tablet@2x-f2729461.jpg 2x"
+          media="(min-width: 768px) and (max-width: 1439px)"
+        />
+        <source
+          srcset="/project-group-18/assets/about-me-mobile-9df1975f.jpg 1x, /project-group-18/assets/about-me-mobile@2x-8aef7f3a.jpg 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          src="/project-group-18/assets/about-me-mobile-9df1975f.jpg"
+          alt="my photo"
+          class="about-me-img"
+          width="343"
+          height="500"
+        />
+      </picture>
+    </div>
+    <ul class="about-me-list">
+      <li class="about-me-item">
+        <div class="about-me-title-container">
+          <h3 class="about-me-title">ABOUT ME</h3>
+          <button class="about-me-button-slider-down" aria-label="Name">
+            <svg class="icon-svg-slider-down" height="24" width="24">
+              <use href="/project-group-18/assets/icons-71848feb.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="about-me-paragraph-container visually-hidden">
+          <p class="about-me-text">
+            I am Lloyd Jefferson, a talented programmer with extensive expertise
+            in software development. I have an understanding of different
+            programming languages and technologies, always ready to improve my
+            skills. I always follow the latest trends and look for
+            unconventional, creative solutions to problems. I have a high level
+            of analytical skills and am able to effectively solve even the most
+            difficult tasks encountered on the way.
+          </p>
+          <p class="about-me-text">
+            Able to work both independently and in a team. I can effectively
+            cooperate with colleagues, exchanging ideas and finding optimal
+            solutions. Professional maturity allows you to calmly cope with
+            challenges and stressful situations, while maintaining a high
+            quality of work. <br>
+            I am always looking for opportunities for self-improvement. I
+            actively study new technologies and practices to stay abreast of the
+            latest innovations. I have a strong understanding of various
+            programming languages, frameworks and architectural concepts that
+            allow me to create efficient and scalable software.
+          </p>
+        </div>
+      </li>
+      <li class="about-me-item">
+        <div class="about-me-title-container">
+          <h3 class="about-me-title">ROLE</h3>
+          <button class="about-me-button-slider-down" aria-label="Name">
+            <svg class="icon-svg-slider-down" height="24" width="24">
+              <use href="/project-group-18/assets/icons-71848feb.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="about-me-paragraph-container visually-hidden">
+        <ul class="role-list">
+          <li class="role-list-item">Frontend development</li>
+          <li class="role-list-item">HeadlessCMS,Wordpress</li>
+          <li class="role-list-item">Blender(enjoy)</li>
+        </ul>
+      </div>
+      </li>
+      <li class="about-me-item">
+        <div class="about-me-title-container">
+          <h3 class="about-me-title">EDUCATION</h3>
+          <button class="about-me-button-slider-down" aria-label="Name">
+            <svg class="icon-svg-slider-down" height="24" width="24">
+              <use href="/project-group-18/assets/icons-71848feb.svg#icon-arrow-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="about-me-paragraph-container visually-hidden">
+        <ul class="education-list">
+          <li class="edication-list-item">
+            2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+          </li>
+          <li class="edication-list-item">
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+            New York
+          </li>
+          <li class="edication-list-item">
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </li>
+        </ul>
+      </div>
+      </li>
+    </ul>
+
+    <div class="skills-section">
+      <div class="swiper about-me">
+        <ul class="swiper-wrapper skills-list">
+          <li class="swiper-slide skills-list-item swiper-slide-about-me">HTML/CSS</li>
+          <li class="swiper-slide skills-list-item">JavaScript</li>
+          <li class="swiper-slide skills-list-item">React</li>
+          <li class="swiper-slide skills-list-item">Node. js</li>
+          <li class="swiper-slide skills-list-item">React Native</li>
+          <li class="swiper-slide skills-list-item">Soft skill</li>
+          <li class="swiper-slide skills-list-item">WebPack</li>
+        </ul>
+    </div>
+      <button class="skills-btn-arrow-right" aria-label="Name" tabindex="0">
+        <svg class="icon-svg-arrow-right">
+          <use href="/project-group-18/assets/icons-71848feb.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+    <section class="benefits-section" id="benefits">
+  <div class="container">
+    <h2 class="benefits-title">Benefits of working with me</h2>
+    <div class="content">
+      <ul class="benefits-list">
+        <li class="benefits-list-card">
+          <div class="card-item">
+            <svg class="benefits-list-card-icon" width="24" height="24">
+              <use href="/project-group-18/assets/icons-71848feb.svg#icon-user"></use>
+            </svg>
+            <div class="card-item-content">
+            <h5 class="card-title">Expertise</h5>
+            <p class="card-text">
+              As a highly experienced developer, I have deep knowledge of
+              programming and website development.
+            </p>
+          </div>
+          </div>
+        </li>
+        <li class="benefits-list-card">
+          <div class="card-item">
+            <svg class="benefits-list-card-icon" width="24" height="24"><use href="/project-group-18/assets/icons-71848feb.svg#icon-communication"></use></svg>
+            <div class="card-item-content">
+            <h5 class="card-title">Communication</h5>
+            <p class="card-text">
+              Understanding your needs and wants is my priority and I am always
+              open to discussions and corrections.
+            </p>
+            </div>
+          </div>
+        </li>
+        <li class="benefits-list-card">
+          <div class="card-item">
+            <svg class="benefits-list-card-icon" width="24" height="24">
+              <use href="/project-group-18/assets/icons-71848feb.svg#icon-brush"></use>
+            </svg>
+            <div class="card-item-content">
+            <h5 class="card-title">Art</h5>
+            <p class="card-text">
+              Thanks to my creative nature, I am ready to accept challenges and
+              help you bring your ideas to life.
+            </p>
+          </div>
+          </div>
+        </li>
+        <li class="benefits-list-card">
+          <div class="card-item">
+            <svg class="benefits-list-card-icon" width="24" height="24">
+              <use href="/project-group-18/assets/icons-71848feb.svg#icon-glassclock"></use>
+            </svg>
+            <div class="card-item-content">
+            <h5 class="card-title">Urgent execution</h5>
+            <p class="card-text">
+              I understand how important time is to you. Ready to work quickly
+              and efficiently, without reducing the quality of work.
+            </p>
+          </div>
+          </div>
+        </li>
+      </ul>
+      <a href="#work-together" class="order-the-project-btn"
+        >Order the project</a>
+    </div>
+  </div>
+</section>
+
+    <section class="project" id="projects">
+  <div class="container">
+    <h2 class="project-title">PROJECTS</h2>
+    <div class="swiper project">
+        <ul class="project-list swiper-wrapper">
+        <li class="first-project-item half-background swiper-slide">
+        <div class="project-item">
+          <div class="main">
+            <ul class="list-name">
+              <li class="item-react">#react</li>
+              <li class="item-js">#js</li>
+              <li class="item-node">#node js</li>
+              <li class="item-git">#git</li>
+            </ul>
+            <h3 class="project-under-title">Programming Across <br>Borders: Ideas,<br>Technologies, Innovations</h3>
+            <a href="https://github.com/KvashaVladyslav/project-group-18" target="_blank" class="project-btn">See
+                project</a>
+          </div>
+          <div class="project-thumb">
+            <picture>
+              <source srcset="/project-group-18/assets/project-1-desktop-tablet-photo-4d3f3c5a.jpg 1x, /project-group-18/assets/project-1-desktop-tablet-photo@2x-5dae8296.jpg 2x"
+            media="(min-width: 768px)"
+              >
+              <source 
+              srcset="/project-group-18/assets/project-1-mobile-photo-1c8f48f8.jpg 1x, /project-group-18/assets/project-1-mobile-photo@2x-f402c049.jpg 2x"
+            media="(max-width: 767px)"
+              >
+            <img class="project-img" src="/project-group-18/assets/project-1-mobile-photo-1c8f48f8.jpg" alt="screen" width="614" height="385">
+            </picture>
+          </div>
+
+        </div>
+      </li>
+
+      <li class="first-project-item half-background swiper-slide">
+        <div class="project-item">
+          <div class="main">
+            <ul class="list-name">
+              <li class="item-react">#react</li>
+              <li class="item-js">#js</li>
+              <li class="item-node">#node js</li>
+              <li class="item-git">#git</li>
+            </ul>
+            <h3 class="project-under-title">Programming Across<br>Borders: Ideas,<br>Technologies, Innovations</h3>
+            <a href="https://github.com/KvashaVladyslav/team-project-group-20" target="_blank" class="project-btn">See
+                project</a>
+          </div>
+          <div class="project-thumb">
+  <picture>
+    <source srcset="/project-group-18/assets/project-2-desktop-tablet-photo-b359011d.jpg 1x, /project-group-18/assets/project-2-desktop-tablet-photo@2x-91be882a.jpg 2x" media="(min-width: 768px)">
+    <source srcset="/project-group-18/assets/project-2-mobile-photo-80b4650d.jpg 1x, /project-group-18/assets/project-2-mobile-photo@2x-a737acef.jpg 2x" media="(max-width: 767px)">
+      <img class="project-img" src="/project-group-18/assets/project-2-mobile-photo-80b4650d.jpg" alt="screen" width="614" height="385">
+  </picture>
+          </div>
+        </div>
+      </li>
+      <li class="first-project-item half-background swiper-slide">
+        <div class="project-item">
+          <div class="main">
+            <ul class="list-name">
+              <li class="item-react">#react</li>
+              <li class="item-js">#js</li>
+              <li class="item-node">#node js</li>
+              <li class="item-git">#git</li>
+            </ul>
+            <h3 class="project-under-title">Programming Across<br>Borders: Ideas,<br>Technologies, Innovations</h3>
+            <a href="https://github.com/KvashaVladyslav/team-project-group-20" target="_blank" class="project-btn">See
+                project</a>
+          </div>
+          <div class="project-thumb">
+              <picture>
+                <source srcset="/project-group-18/assets/project-3-desktop-tablet-photo-036a2b8f.jpg 1x, /project-group-18/assets/project-3-desktop-tablet-photo@2x-cfde7165.jpg 2x" media="(min-width: 768px)">
+                <source srcset="/project-group-18/assets/project-3-mobile-photo-d2df362d.jpg 1x, /project-group-18/assets/project-3-mobile-photo@2x-ed9fa630.jpg 2x" media="(max-width: 767px)">
+              
+                <img class="project-img" src="/project-group-18/assets/project-3-mobile-photo-d2df362d.jpg" alt="screen" width="614" height="385">
+              </picture>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+      <ul class="btn-svg">
+          <li class="btn-item btn-item-left">
+            <a class="swiper-btn-prev swiper-btn" href="" tabindex="0"><svg class="project-arrow-svg">
+                <use href="/project-group-18/assets/icons-71848feb.svg#icon-arrow-left"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="btn-item">
+            <a class="swiper-btn-next swiper-btn" href="" tabindex="0"><svg class="project-arrow-svg">
+                <use href="/project-group-18/assets/icons-71848feb.svg#icon-arrow-right"></use></svg>
+            </a>
+          </li>
+      </ul>
+  </div>
+</section>
+    <section id="faq">
+  <div class="container">
+    <h2>FAQ</h2>
+    <div class="content-wrapper-faq">
+      <ul class="main-list">
+        <li class="main-list-item first">
+          <ul class="other-list">
+            <li class="other-list-item accordion-faq">
+              <div class="title-button-wrapper-faq">
+                <h3 class="list-item-title-faq">What programming languages are most often used in your project?</h3>
+                  <button class="svg-icon-btn-faq" aria-label="Button for open more information">    
+                    <svg class="svg-icon-faq" width="24" height="24">
+                      <use class="use-faq" href="/project-group-18/assets/icons-71848feb.svg#icon-arrow-down"></use>
+                    </svg>
+                  </button>
+              </div>
+              <div class="text-wrapper-faq">
+              <p class="other-list-item-paragraph">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+                </div>
+            </li>
+            <li class="other-list-item accordion-faq">
+              <div class="title-button-wrapper-faq">
+                <h3 class="list-item-title-faq">What are the deadlines for the project?</h3>
+                  <button class="svg-icon-btn-faq" aria-label="Button for open more information">    
+                    <svg class="svg-icon-faq" width="24" height="24">
+                      <use class="use-faq" href="/project-group-18/assets/icons-71848feb.svg#icon-arrow-down"></use>
+                    </svg>
+                  </button>
+              </div>
+              <div class="text-wrapper-faq">
+              <p class="other-list-item-paragraph">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+                </div>
+            </li>
+            <li class="other-list-item accordion-faq">
+              <div class="title-button-wrapper-faq">
+                <h3 class="list-item-title-faq">What payment methods do you accept?</h3>
+                  <button class="svg-icon-btn-faq" aria-label="Button for open more information">    
+                    <svg class="svg-icon-faq" width="24" height="24">
+                      <use class="use-faq" href="/project-group-18/assets/icons-71848feb.svg#icon-arrow-down"></use>
+                    </svg>
+                  </button>
+              </div>
+              <div class="text-wrapper-faq">
+              <p class="other-list-item-paragraph">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+                </div>
+            </li>
+          </ul>
+        </li>
+        <li class="main-list-item second">
+          <ul class="other-list">
+            <li class="other-list-item accordion-faq">
+              <div class="title-button-wrapper-faq">
+                <h3 class="list-item-title-faq">How can I contact you?</h3>
+                  <button class="svg-icon-btn-faq" aria-label="Button for open more information">    
+                    <svg class="svg-icon-faq" width="24" height="24">
+                      <use class="use-faq" href="/project-group-18/assets/icons-71848feb.svg#icon-arrow-down"></use>
+                    </svg>
+                  </button>
+              </div>
+              <div class="text-wrapper-faq">
+              <p class="other-list-item-paragraph">In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.</p>
+                </div>
+            </li>
+            <li class="other-list-item accordion-faq">
+              <div class="title-button-wrapper-faq">
+                <h3 class="list-item-title-faq">Do you provide advice or support?</h3>
+                  <button class="svg-icon-btn-faq" aria-label="Button for open more information">    
+                    <svg class="svg-icon-faq" width="24" height="24">
+                      <use class="use-faq" href="/project-group-18/assets/icons-71848feb.svg#icon-arrow-down"></use>
+                    </svg>
+                  </button>
+              </div>
+              <div class="text-wrapper-faq">
+              <p class="other-list-item-paragraph">The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+                </div>
+            </li>
+            <li class="other-list-item accordion-faq">
+              <div class="title-button-wrapper-faq">
+                <h3 class="list-item-title-faq">Do you provide advice or support?</h3>
+                  <button class="svg-icon-btn-faq" aria-label="Button for open more information">    
+                    <svg class="svg-icon-faq" width="24" height="24">
+                      <use class="use-faq" href="/project-group-18/assets/icons-71848feb.svg#icon-arrow-down"></use>
+                    </svg>
+                  </button>
+              </div>
+              <div class="text-wrapper-faq">
+              <p class="other-list-item-paragraph">Payment through credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+                </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <section class="covers-section">
+  
+    <h2 class="visually-hidden">Covers</h2>
+    <ul class="covers">
+      <li>
+      <ul class="covers-list first">
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-1-f2354052.jpg 1x, /project-group-18/assets/project-1@2x-5188d099.jpg 2x">
+            <img src="/project-group-18/assets/project-1-f2354052.jpg" alt="project-photo" width="544" height="314" />
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-2-36491758.jpg 1x, /project-group-18/assets/project-2@2x-855bde3f.jpg 2x">
+            <img src="/project-group-18/assets/project-2-36491758.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-3-6fb08c00.jpg 1x, /project-group-18/assets/project-3@2x-2a059190.jpg 2x">
+            <img src="/project-group-18/assets/project-3-6fb08c00.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-4-7fcbf707.jpg 1x, /project-group-18/assets/project-4@2x-bce7fcf6.jpg 2x">
+            <img src="/project-group-18/assets/project-4-7fcbf707.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-5-c257b4bb.jpg 1x, /project-group-18/assets/project-5@2x-228dabdb.jpg 2x">
+            <img src="/project-group-18/assets/project-5-c257b4bb.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-6-f70d31f7.jpg 1x, /project-group-18/assets/project-6@2x-96cf2aa8.jpg 2x">
+            <img src="/project-group-18/assets/project-6-f70d31f7.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-7-c1c17949.jpg 1x, /project-group-18/assets/project-7@2x-740e3952.jpg 2x">
+            <img src="/project-group-18/assets/project-7-c1c17949.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-8-3f1c61ea.jpg 1x, /project-group-18/assets/project-8@2x-585b3d71.jpg 2x">
+            <img src="/project-group-18/assets/project-8-3f1c61ea.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-9-2ac49d4d.jpg 1x, /project-group-18/assets/project-9@2x-f35c3550.jpg 2x">
+            <img src="/project-group-18/assets/project-9-2ac49d4d.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-10-5044bfab.jpg 1x, /project-group-18/assets/project-10@2x-8b9c5255.jpg 2x">
+            <img src="/project-group-18/assets/project-10-5044bfab.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <ul class="covers-list second">
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-1-f2354052.jpg 1x, /project-group-18/assets/project-1@2x-5188d099.jpg 2x">
+            <img src="/project-group-18/assets/project-1-f2354052.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-2-36491758.jpg 1x, /project-group-18/assets/project-2@2x-855bde3f.jpg 2x">
+            <img src="/project-group-18/assets/project-2-36491758.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-3-6fb08c00.jpg 1x, /project-group-18/assets/project-3@2x-2a059190.jpg 2x">
+            <img src="/project-group-18/assets/project-3-6fb08c00.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-4-7fcbf707.jpg 1x, /project-group-18/assets/project-4@2x-bce7fcf6.jpg 2x">
+            <img src="/project-group-18/assets/project-4-7fcbf707.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-5-c257b4bb.jpg 1x, /project-group-18/assets/project-5@2x-228dabdb.jpg 2x">
+            <img src="/project-group-18/assets/project-5-c257b4bb.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-10-5044bfab.jpg 1x, /project-group-18/assets/project-10@2x-8b9c5255.jpg 2x">
+            <img src="/project-group-18/assets/project-10-5044bfab.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-6-f70d31f7.jpg 1x, /project-group-18/assets/project-6@2x-96cf2aa8.jpg 2x">
+            <img src="/project-group-18/assets/project-6-f70d31f7.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-8-3f1c61ea.jpg 1x, /project-group-18/assets/project-8@2x-585b3d71.jpg 2x">
+            <img src="/project-group-18/assets/project-8-3f1c61ea.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-9-2ac49d4d.jpg 1x, /project-group-18/assets/project-9@2x-f35c3550.jpg 2x">
+            <img src="/project-group-18/assets/project-9-2ac49d4d.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-7-c1c17949.jpg 1x, /project-group-18/assets/project-7@2x-740e3952.jpg 2x">
+            <img src="/project-group-18/assets/project-7-c1c17949.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        
+      </ul>
+    </li>
+    <li>
+      <ul class="covers-list third">
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-4-7fcbf707.jpg 1x, /project-group-18/assets/project-4@2x-bce7fcf6.jpg 2x">
+            <img src="/project-group-18/assets/project-4-7fcbf707.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-5-c257b4bb.jpg 1x, /project-group-18/assets/project-5@2x-228dabdb.jpg 2x">
+            <img src="/project-group-18/assets/project-5-c257b4bb.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-1-f2354052.jpg 1x, /project-group-18/assets/project-1@2x-5188d099.jpg 2x">
+            <img src="/project-group-18/assets/project-1-f2354052.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-9-2ac49d4d.jpg 1x, /project-group-18/assets/project-9@2x-f35c3550.jpg 2x">
+            <img src="/project-group-18/assets/project-9-2ac49d4d.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-10-5044bfab.jpg 1x, /project-group-18/assets/project-10@2x-8b9c5255.jpg 2x">
+            <img src="/project-group-18/assets/project-10-5044bfab.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-2-36491758.jpg 1x, /project-group-18/assets/project-2@2x-855bde3f.jpg 2x">
+            <img src="/project-group-18/assets/project-2-36491758.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-3-6fb08c00.jpg 1x, /project-group-18/assets/project-3@2x-2a059190.jpg 2x">
+            <img src="/project-group-18/assets/project-3-6fb08c00.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-6-f70d31f7.jpg 1x, /project-group-18/assets/project-6@2x-96cf2aa8.jpg 2x">
+            <img src="/project-group-18/assets/project-6-f70d31f7.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-7-c1c17949.jpg 1x, /project-group-18/assets/project-7@2x-740e3952.jpg 2x">
+            <img src="/project-group-18/assets/project-7-c1c17949.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+        <li class="covers-item">
+          <picture>
+            <source srcset="/project-group-18/assets/project-8-3f1c61ea.jpg 1x, /project-group-18/assets/project-8@2x-585b3d71.jpg 2x">
+            <img src="/project-group-18/assets/project-8-3f1c61ea.jpg" alt="project-photo" width="544" height="314">
+          </picture>
+        </li>
+      </ul>
+    </li>
+    </ul>
+
+</section>
+
+    <section class="reviews">
+  <div class="container">
+    <h2 class="review-title">REVIEWS</h2>
+    <div class="swiper reviews">
+    <ul class="review-list swiper-wrapper">
+    </ul>
+  </div>
+    <ul class="swiper-navigation">
+      <li class="btn-item btn-item-left">
+        <a class="swiper-btn-prev swiper-btn review" href="" tabindex="0"><svg class="project-arrow-svg">
+            <use href="/project-group-18/assets/icons-71848feb.svg#icon-arrow-left"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="btn-item">
+        <a class="swiper-btn-next swiper-btn review" href="" tabindex="0"><svg class="project-arrow-svg">
+            <use href="/project-group-18/assets/icons-71848feb.svg#icon-arrow-right"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
   </main>
-    <load src="partials/work-together.html">
-    <load src="partials/modal-window.html">
-    <load src="partials/scroll-btn.html">
+    <footer class="section-footer" id="work-together">
+  <div class="container">
+    <div class="footer-content-wrapper">
+        <h3 class="footer-title">
+          <picture>
+            <source srcset="data:image/jpeg;base64,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 1x, /project-group-18/assets/header-photo@2x-0f86ba85.jpg 2x">
+          <img src="data:image/jpeg;base64,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" alt="me" class="footer-img" width="70" height="70">
+        </picture>
+          LET'S <span class="highlighted-text">WORK</span>TOGETHER</h3>
+    <form class="form-section">
+      <div class="input-fields">
+        <div>
+        <input class="input-field" type="email" name="email" placeholder="clients@gmail.com"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" title="Please enter a valid email address" autocomplete="off" required>
+          <p class="success-text visually-hidden">Success</p>
+          <p class="error-text visually-hidden">Invalid email, try again</p>
+        </div>
+        <div>
+        <input class="input-field" name="comment" placeholder="comments" autocomplete="off" required>
+        <p class="success-text visually-hidden">Success</p>
+        <p class="error-text visually-hidden">Invalid email, try again</p>
+        </div>
+      </div>
+      <button type="submit" class="submit-button" aria-label="Submit button with your information">Send</button>
+    </form>
+    <div class="contact-info">
+      <a class="email-info" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+      <a class="phone-info" href="tel:+3801111111111">+380 11 1111 11 11</a>
+    </div>
+  </div>
+  </div>
+</footer>
+    <div class="backdrop hidden"></div>
+<div class="modal-relative">
+<div class="modal-window hidden">
+        <div class="relative">
+            <button class="close-btn" aria-label="Close modal window button">
+                <svg class="svg-close">
+                    <use href="/project-group-18/assets/icons-71848feb.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    <div class="modal-text">
+        <h2 class="modal-title">Thank you for your interest in cooperation!</h2>
+        <p class="modal-paragraf">The manager will contact you shortly to discuss further details and opportunities for
+            cooperation.
+            Please stay in touch</p>
+    </div>
+</div>
+</div>
+
+    <a class="scroll-btn visually-hidden" href="#header"
+  ><svg width="20" height="20">
+    <use href="/project-group-18/assets/icons-71848feb.svg#icon-arrow-right"></use>
+  </svg>
+</a>
 
     
   </body>
