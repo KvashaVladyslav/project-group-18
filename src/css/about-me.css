@@ -1,0 +1,388 @@
+.functional {
+  color: #ed3b44;
+}
+
+.about-me-section {
+  padding-top: 64px;
+}
+
+
+.websites {
+  color: #fafafa60;
+}
+
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.intro {
+  border-radius: 24px;
+  background-color: #242527;
+}
+
+.about-me-img {
+  border-radius: 24px;
+  width: 100%;
+}
+
+.about-me-title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.about-me-paragraph-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  transition: 750ms ease-in-out;
+}
+
+.about-me-button-slider-down {
+  border: 1px solid #fafafa20;
+    border-radius: 50%;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    height: 40px;
+  transition: 1.4s;
+}
+
+.icon-svg-slider-down {
+  fill: none;
+  stroke: #ffffff;
+}
+
+.about-me-intro {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  color: #fafafa;
+  padding: 32px 32px 272px 32px;
+}
+
+@media screen and (max-width:320px) {
+  .about-me-intro {
+    font-size: 16px;
+  }
+}
+
+.about-me-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+  max-width: 343px;
+  padding: 0px;
+  margin-bottom: 32px;
+}
+
+.about-me-title {
+  max-width: 284px;
+  margin: 0px 23px 24px 0px;
+  padding: 0px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #fafafa66;
+}
+
+.about-me-text {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.about-me-item {
+  border-bottom: 1px solid #fafafa20;
+  padding-bottom: 20px;
+}
+
+.role-list {
+  list-style-type: none;
+  max-width: 343px;
+  padding: 0px;
+  gap: 10px;
+}
+
+.role-list-item {
+  max-width: 284px;
+  line-height: 24px;
+  padding: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.education-list {
+  list-style-type: none;
+  max-width: 343px;
+  padding: 0px;
+}
+
+.education-list-item {
+  max-width: 284px;
+  line-height: 24px;
+  padding: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.skills-list {
+  display: flex;
+  max-width: 260px;
+}
+
+.swiper-slide.skills-list-item {
+  border: 1px solid #fafafa20;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+@media screen and (max-width:320px) {
+  .swiper-slide.skills-list-item {
+    font-size: 10px;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+.skill-name {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  line-height: 24px;
+}
+
+.skills-list-item.swiper-slide-active {
+  background-color: rgb(237, 59, 68);
+}
+
+
+.skills-section {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.skills-btn-arrow-right {
+  border: none;
+  background-color: transparent;
+  opacity: 0.2;
+}
+
+.icon-svg-arrow-right {
+  fill: none;
+  stroke: #ffffff;
+  width: 22px;
+  height: 22px;
+}
+
+.swiper.about-me {
+  margin: 0;
+}
+
+.about-me-paragraph-container.visually-hidden {
+  transition: opacity 1.5s ease, visibility 1.5s ease;
+}
+
+.about-me-paragraph-container.active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1.5s ease, visibility 1.5s ease;
+}
+
+.about-me-paragraph-container {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1.5s ease, visibility 1.5s ease;
+}
+
+.about-me-button-slider-down:hover,
+.about-me-button-slider-down:focus {
+  border: 1px solid #fafafa;
+}
+
+.skills-btn-arrow-right:hover,
+.skills-btn-arrow-right:focus {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+
+@media screen and (min-width: 768px) {
+  .intro-wrapper {
+    margin-bottom: 64px;
+  }
+  
+  
+  .intro {
+    background: #242527;
+    border-radius: 24px;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .about-me-intro {
+    font-size: 38px;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+    padding: 64px 64px 436px 64px;
+  }
+
+  .about-me-list {
+    max-width: 768px;
+    margin-bottom: 64px;
+  }
+
+  .about-me-title {
+    max-width: 284px;
+    margin: 0px 23px 24px 0px;
+  }
+
+  .about-me-text {
+    max-width: 768px;
+  }
+
+  .role-list {
+    max-width: 768px;
+  }
+
+  .education-list {
+    max-width: 768px;
+  }
+
+  .skills-list {
+    max-width: 600px;
+  }
+
+  .skills-section {
+    overflow-x: auto;
+  }
+
+  .swiper-slide.skills-list-item {
+    width: 200px;
+    height: 200px;
+  }
+
+  .skill-name {
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  .intro-wrapper {
+    flex-direction: row;
+    max-width: 1376px;
+    margin: 0px auto 64px;
+  }
+
+  .about-me-section {
+    padding-top: 96px;
+  }
+
+  .about-me-paragraph-container {
+    align-items: flex-end;
+  }
+
+  .intro {
+    max-width: 680px;
+  }
+
+  .img {
+    margin: 0px;
+  }
+
+  .about-me-intro {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  .about-me-list {
+    max-width: 1376px;
+    margin: 0 auto;
+  }
+
+  .about-me-title-container {
+    margin-bottom: 32px;
+  }
+
+  .about-me-title {
+    margin: 0px 23px 16px 0px;
+  }
+
+  .about-me-text {
+    max-width: 612px;
+  }
+
+  .about-me-item {
+    padding-bottom: 32px;
+  }
+
+
+  .role-list {
+    max-width: 1376px;
+    padding-right: 439px ;
+  }
+
+  .education-list {
+    max-width: 1376px;
+    padding-right: 59px;
+  }
+
+  .skills-list {
+    max-width: 1200px;
+  }
+
+  .skills-section {
+    margin-top: 96px;
+    position: relative;
+  }
+
+  .skills-btn-arrow-right {
+    width: 40px;
+    height: 40px;
+  }
+
+  .swiper-slide.skills-list-item {
+    width: 200px;
+    height: 200px;
+  }
+
+  .swiper.about-me {
+    margin-left: 32px;
+  }
+
+  .about-me-paragraph-container.active {
+    margin-right: 68px;
+  }
+}
