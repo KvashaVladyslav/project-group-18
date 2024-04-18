@@ -215,6 +215,13 @@
   transition: opacity 1.5s ease, visibility 1.5s ease;
 }
 
+.about-me-item:hover,
+.about-me-item:focus {
+  border: 1px solid #fafafa;
+}
+
+
+
 @media screen and (min-width: 768px) {
   .intro-wrapper {
     margin-bottom: 64px;
