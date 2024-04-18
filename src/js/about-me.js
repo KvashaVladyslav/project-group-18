@@ -24,7 +24,7 @@ const btns = document.querySelectorAll('.about-me-item');
         : `${icons}#icon-arrow-down`,
     );
   }
-  function handleClick() {
+  function handleClick(event) {
     const currentBtn = event.currentTarget;
     const closest = currentBtn.closest('.about-me-item');
     const aboutMeParagraphContainer = closest.querySelector('.about-me-paragraph-container');

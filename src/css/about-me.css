@@ -206,6 +206,7 @@
 .about-me-paragraph-container.active {
   opacity: 1;
   visibility: visible;
+  transition: opacity 1.5s ease, visibility 1.5s ease;
 }
 
 .about-me-paragraph-container {
