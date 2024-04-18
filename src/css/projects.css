@@ -275,3 +275,7 @@
     cursor: not-allowed;
     pointer-events: none;
 }
+
+.swiper.project {
+    border-radius: 24px;
+}
