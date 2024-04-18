@@ -15,6 +15,7 @@ header {
 .open-mobile-order-btn:focus,
 .open-mobile-order-btn:hover {
     background-color: #E0373F;
+    transition: 0.5s ease;
 }
 
 .header-nav-menu-link {
@@ -36,6 +37,11 @@ header {
     gap: 20px;
 }
 
+.menu-nav:hover,
+.menu-nav:focus {
+    transition: 0.5s ease;
+}
+
 .menu-list {
     display: none;
     justify-content: center;
@@ -45,14 +51,16 @@ header {
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
-.menu-list {
+.menu-list.active {
     opacity: 1;
     visibility: visible;
+    transition: opacity 1s ease, visibility 0.5s ease;
 }
 
 .link:hover,
 .link:focus {
     color: #E0373F;
+    transition: 0.5s ease;
 }
 
 .link {
@@ -216,6 +224,10 @@ header {
     border-style: solid;
  }
 
+ .header-nav-menu-link:hover,
+ .header-nav-menu-link:focus {
+    transition: 0.5s ease;
+ }
 
 @media screen and (min-width:768px){
     .container {

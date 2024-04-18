@@ -45,8 +45,8 @@
 .about-me-button-slider-down {
   background-color: transparent;
   border: none;
-  width: 32px;
-  height: 32px;
+  justify-content: center;
+  padding: 9.5px;
   display: flex;
   align-items: center;
   border: 1px solid rgba(250, 250, 250, 0.2);
@@ -198,8 +198,6 @@
 }
 
 .about-me-paragraph-container.visually-hidden {
-  opacity: 0;
-  visibility: hidden;
   transition: opacity 1.5s ease, visibility 1.5s ease;
 }
 
@@ -341,15 +339,6 @@
     padding-bottom: 32px;
   }
 
-  .about-me-button-slider-down {
-    width: 40px;
-    height: 40px;
-  }
-
-  .icon-svg-slider-down {
-    width: 35px;
-    height: 35px;
-  }
 
   .role-list {
     max-width: 1376px;

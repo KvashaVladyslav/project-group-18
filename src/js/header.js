@@ -4,29 +4,39 @@ const closeBtn = document.querySelector(".svg-close")
 const menu = document.querySelector(".header-nav-menu-link")
 const menuList = document.querySelector(".menu-list")
 const orderButton = document.querySelector(".open-mobile-order-btn-modal")
-
 orderButton.addEventListener("click", () => {
-    mobileWindow.classList.add("hidden")
+    mobileWinsowHide()
 })
-
-
 const linksModal = document.querySelectorAll(".link")
 linksModal.forEach(link => link.addEventListener("click", () => {
-    mobileWindow.classList.add("hidden")
+    mobileWinsowHide()
 }))
-
 menu.addEventListener("click", () => {
     if (menuList.classList.contains("visually-hidden")) {
-        menuList.classList.remove("visually-hidden");
+       openMenu()
     } else {
-        menuList.classList.add("visually-hidden");
+       closeMenu()
     }
 });
-
 burgerIcon.addEventListener("click", () => {
-    mobileWindow.classList.remove("hidden")
+    mobileWinsowShow()
 })
-
 closeBtn.addEventListener("click", () => {
-     mobileWindow.classList.add("hidden")
+    mobileWinsowHide()
 })
+function openMenu() {
+     menuList.classList.add("active");
+        menuList.classList.remove("visually-hidden");
+}
+function closeMenu() {
+      menuList.classList.add("visually-hidden");
+         menuList.classList.remove("active");
+}
+function mobileWinsowShow() {
+    mobileWindow.classList.remove("hidden")
+document.body.style.overflow = 'hidden';
+}
+function mobileWinsowHide() {
+     mobileWindow.classList.add("hidden")
+document.body.style.overflow = 'auto';
+}
