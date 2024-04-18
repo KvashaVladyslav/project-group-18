@@ -266,7 +266,7 @@
 
   .about-me-title {
     max-width: 284px;
-    margin: 0px, 23px, 24px, 0px;
+    margin: 0px 23px 24px 0px;
   }
 
   .about-me-text {
@@ -324,7 +324,7 @@
   }
 
   .about-me-intro {
-    margin: 64px, 64px, 436px, 64px;
+    margin: 64px 64px 436px 64px;
     font-size: 38px;
     line-height: 40px;
   }
@@ -339,7 +339,7 @@
   }
 
   .about-me-title {
-    margin: 0px, 23px, 16px, 0px;
+    margin: 0px 23px 16px 0px;
   }
 
   .about-me-text {
