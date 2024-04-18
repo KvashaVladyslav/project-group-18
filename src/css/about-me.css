@@ -43,15 +43,15 @@
 }
 
 .about-me-button-slider-down {
-  background-color: transparent;
-  border: none;
-  justify-content: center;
-  padding: 7.5px;
-  display: flex;
-  align-items: center;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 50%;
-
+  border: 1px solid #fafafa20;
+    border-radius: 50%;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    height: 40px;
   transition: 1.4s;
 }
 
@@ -88,13 +88,12 @@
 
 .about-me-title {
   max-width: 284px;
-  margin: 0px, 23px, 24px, 0px;
+  margin: 0px 23px 24px 0px;
   padding: 0px;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.02em;
-  align-self: left;
   color: #fafafa66;
 }
 
@@ -116,7 +115,7 @@
 .role-list {
   list-style-type: none;
   max-width: 343px;
-  margin: 0px, 16px, 32px, 16px;
+  margin: 0px 16px 32px 16px;
   padding: 0px;
   gap: 10px;
 }
@@ -128,7 +127,6 @@
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-  align-self: left;
   color: #fafafa;
 }
 
@@ -145,7 +143,6 @@
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-  align-self: left;
   color: #fafafa;
 }
 
