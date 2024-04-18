@@ -115,7 +115,6 @@
 .role-list {
   list-style-type: none;
   max-width: 343px;
-  margin: 0px 16px 32px 16px;
   padding: 0px;
   gap: 10px;
 }
@@ -252,11 +251,11 @@
   }
 
   .about-me-intro {
-    padding: 64px 64px 436px 64px;
     font-size: 38px;
     line-height: 40px;
     text-transform: uppercase;
     letter-spacing: -0.03em;
+    padding: 64px 64px 436px 64px;
   }
 
   .about-me-list {
@@ -324,7 +323,6 @@
   }
 
   .about-me-intro {
-    margin: 64px 64px 436px 64px;
     font-size: 38px;
     line-height: 40px;
   }
